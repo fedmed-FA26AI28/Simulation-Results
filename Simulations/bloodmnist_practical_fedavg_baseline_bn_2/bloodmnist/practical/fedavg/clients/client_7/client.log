@@ -2,9 +2,9 @@
 [Client 7] Augmentation: augment=False, crop=False, flip=False
 [Client 7] Assigned 115 training samples
 [Client 7] Using local test partition: 30 samples
-[Client 7] [Ping] Init (init) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
+[Client 7] [Ping] Init (init) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
 [Client 7] Initialized on cuda (pc) | IPv4: 10.10.102.172 | train_samples=115 | Optimizer: SGD | LR Mode: fixed (Initial LR: 0.01)
-[Client 7] Connecting to 127.0.0.1:34769...
+[Client 7] Connecting to 127.0.0.1:42597...
 [93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
 	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
 	flwr.client.start_client(
@@ -31,1205 +31,1237 @@
             entirely in future versions of Flower.
         
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message c4fa9dcb-01f1-45bf-b662-03472d6fb4d7
+[92mINFO [0m:      Received: train message 9004ff13-2dec-4734-836d-bbf77ab9a5c7
 [Client 7] Round 1: Fixed LR = 0.010000
-[Client 7] [Ping] Round 1 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=2.0673 Acc=0.2174 | 0.33s
+[Client 7] [Ping] Round 1 (fit) -> 127.0.0.1:42597 | Latency: 0.06 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=2.0673 Acc=0.2174 | 0.62s
   [Client] Epoch [2/5] LR=0.010000 | Loss=1.9649 Acc=0.3739 | 0.02s
   [Client] Epoch [3/5] LR=0.010000 | Loss=1.8132 Acc=0.4609 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=1.6699 Acc=0.4783 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=1.6698 Acc=0.4783 | 0.01s
   [Client] Epoch [5/5] LR=0.010000 | Loss=1.5524 Acc=0.4957 | 0.01s
-[Client 7] fit done | Round 1 | IPv4: 10.10.102.172 | loss=1.5524 acc=0.4957 | round_time=0.39s | avg_epoch=0.08s | weights=2228.9KB
+[Client 7] fit done | Round 1 | IPv4: 10.10.102.172 | loss=1.5524 acc=0.4957 | round_time=0.67s | avg_epoch=0.13s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 76c1aaa8-e629-4182-981f-25be122b388d
-[Client 7] evaluate | loss=1.7865 acc=0.3333
+[92mINFO [0m:      Received: evaluate message d1238c39-5bca-49c8-bbea-42c55e5c970a
+[Client 7] Checkpoint Saved: best_model.pth (2234.8 KB)
+[Client 7] New Best Local Test Accuracy: 33.33% (Round 1) -> Saved best_model.pth
+[Client 7] evaluate | loss=1.7873 acc=0.3333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message a00453bc-3523-4656-9362-47bb412d5cf4
+[92mINFO [0m:      Received: train message 9fa59c24-5607-4acd-b2eb-4f3978a22891
 [Client 7] Round 2: Fixed LR = 0.010000
-[Client 7] [Ping] Round 2 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=1.5663 Acc=0.4348 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=1.4953 Acc=0.4435 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=1.4000 Acc=0.4522 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=1.3124 Acc=0.5913 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=1.2441 Acc=0.6783 | 0.01s
-[Client 7] fit done | Round 2 | IPv4: 10.10.102.172 | loss=1.2441 acc=0.6783 | round_time=0.05s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 2 (fit) -> 127.0.0.1:42597 | Latency: 0.05 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=1.5605 Acc=0.4435 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=1.4913 Acc=0.4435 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=1.3991 Acc=0.4522 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=1.3093 Acc=0.5913 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=1.2374 Acc=0.6783 | 0.02s
+[Client 7] fit done | Round 2 | IPv4: 10.10.102.172 | loss=1.2374 acc=0.6783 | round_time=0.10s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message e1730427-3e1b-4203-ba20-53942d3283bf
-[Client 7] evaluate | loss=1.5829 acc=0.3667
+[92mINFO [0m:      Received: evaluate message 4cbbc0ce-ebbb-46ea-b551-e4f037f2ddd1
+[Client 7] Checkpoint Saved: best_model.pth (2234.8 KB)
+[Client 7] New Best Local Test Accuracy: 43.33% (Round 2) -> Saved best_model.pth
+[Client 7] evaluate | loss=1.5670 acc=0.4333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 35afc2f8-d7bb-414c-b0aa-bd93e4434246
+[92mINFO [0m:      Received: train message 41569df6-b5b0-4a73-9c89-c8985b8977ac
 [Client 7] Round 3: Fixed LR = 0.010000
-[Client 7] [Ping] Round 3 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=1.3562 Acc=0.5826 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=1.2510 Acc=0.6348 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=1.1313 Acc=0.6870 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=1.0185 Acc=0.7391 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.9340 Acc=0.7217 | 0.01s
-[Client 7] fit done | Round 3 | IPv4: 10.10.102.172 | loss=0.9340 acc=0.7217 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 3 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=1.3512 Acc=0.5391 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=1.2510 Acc=0.6174 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=1.1326 Acc=0.6783 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=1.0194 Acc=0.7043 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.9349 Acc=0.7304 | 0.01s
+[Client 7] fit done | Round 3 | IPv4: 10.10.102.172 | loss=0.9349 acc=0.7304 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 7aeb8293-5d55-448f-b589-a80cb6c95647
-[Client 7] evaluate | loss=1.2902 acc=0.5667
+[92mINFO [0m:      Received: evaluate message 4a0d8424-b3f1-4814-9db4-00364597f379
+[Client 7] Checkpoint Saved: best_model.pth (2234.8 KB)
+[Client 7] New Best Local Test Accuracy: 60.00% (Round 3) -> Saved best_model.pth
+[Client 7] evaluate | loss=1.2692 acc=0.6000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 1ee156c9-caa2-4820-bf08-51ff45cd3355
+[92mINFO [0m:      Received: train message 53f34fcb-3707-452a-95bf-59d01e01f7be
 [Client 7] Round 4: Fixed LR = 0.010000
-[Client 7] [Ping] Round 4 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=1.1173 Acc=0.5391 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.9896 Acc=0.6174 | 0.03s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.8644 Acc=0.6957 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.7977 Acc=0.7304 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.7355 Acc=0.7565 | 0.01s
-[Client 7] fit done | Round 4 | IPv4: 10.10.102.172 | loss=0.7355 acc=0.7565 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 4 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=1.1610 Acc=0.5217 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=1.0054 Acc=0.5913 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.8651 Acc=0.6696 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.8104 Acc=0.7217 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.7754 Acc=0.7391 | 0.03s
+[Client 7] fit done | Round 4 | IPv4: 10.10.102.172 | loss=0.7754 acc=0.7391 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message a6336e39-7979-4eb0-ab7c-29d0e35a618e
-[Client 7] evaluate | loss=1.4601 acc=0.3333
+[92mINFO [0m:      Received: evaluate message 70393cfc-2dd4-4c77-b1b6-9489aed78fd6
+[Client 7] evaluate | loss=1.4733 acc=0.3667
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 2f8c7d18-31a7-49d2-b41e-220d2bd6379f
+[92mINFO [0m:      Received: train message 42d42da2-6535-4796-a4a5-5668084ed9dd
 [Client 7] Round 5: Fixed LR = 0.010000
-[Client 7] [Ping] Round 5 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.9641 Acc=0.7565 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.8301 Acc=0.7913 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.7060 Acc=0.8261 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.6334 Acc=0.8348 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.5914 Acc=0.8261 | 0.01s
-[Client 7] fit done | Round 5 | IPv4: 10.10.102.172 | loss=0.5914 acc=0.8261 | round_time=0.05s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 5 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.9462 Acc=0.7304 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.8446 Acc=0.7739 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.7220 Acc=0.8087 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.6235 Acc=0.8435 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.5756 Acc=0.8435 | 0.01s
+[Client 7] fit done | Round 5 | IPv4: 10.10.102.172 | loss=0.5756 acc=0.8435 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message fa4aa35a-3af9-4a55-93dc-a5766df89d85
-[Client 7] evaluate | loss=1.1045 acc=0.6000
+[92mINFO [0m:      Received: evaluate message 293c45af-7a71-49ec-bb0d-cce81ceda162
+[Client 7] evaluate | loss=1.1617 acc=0.5667
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 702748a7-f0d5-4545-aaa5-675bf362cb23
+[92mINFO [0m:      Received: train message faa7e8da-340f-49da-be06-c0c60891f564
 [Client 7] Round 6: Fixed LR = 0.010000
-[Client 7] [Ping] Round 6 (fit) -> 127.0.0.1:34769 | Latency: 0.05 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=1.2165 Acc=0.5304 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.9631 Acc=0.6261 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.7278 Acc=0.6870 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.6115 Acc=0.7913 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.5923 Acc=0.8087 | 0.03s
-[Client 7] fit done | Round 6 | IPv4: 10.10.102.172 | loss=0.5923 acc=0.8087 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 6 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=1.1832 Acc=0.5652 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.9729 Acc=0.6087 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.7410 Acc=0.6522 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.6114 Acc=0.8174 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.5968 Acc=0.8348 | 0.01s
+[Client 7] fit done | Round 6 | IPv4: 10.10.102.172 | loss=0.5968 acc=0.8348 | round_time=0.10s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 0d4ccb14-b6a6-4fa7-b863-4d4404b0da96
-[Client 7] evaluate | loss=1.4920 acc=0.4333
+[92mINFO [0m:      Received: evaluate message fa0865c8-655d-4780-be82-386160c5773e
+[Client 7] evaluate | loss=1.5068 acc=0.4000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 1ab06a7e-55d6-4138-afeb-52b24d91924e
+[92mINFO [0m:      Received: train message 8ed92243-661c-4b7d-8d96-b77b3bcf28b6
 [Client 7] Round 7: Fixed LR = 0.010000
-[Client 7] [Ping] Round 7 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.9521 Acc=0.6087 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.8976 Acc=0.6522 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.7631 Acc=0.7391 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.6174 Acc=0.8348 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.5267 Acc=0.8435 | 0.02s
-[Client 7] fit done | Round 7 | IPv4: 10.10.102.172 | loss=0.5267 acc=0.8435 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 7 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.9557 Acc=0.6000 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.9056 Acc=0.6348 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.7729 Acc=0.7304 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.6441 Acc=0.8435 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.5615 Acc=0.8174 | 0.03s
+[Client 7] fit done | Round 7 | IPv4: 10.10.102.172 | loss=0.5615 acc=0.8174 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 436bdabd-98c5-4d20-9a5e-73f3d8f5e13d
-[Client 7] evaluate | loss=1.1005 acc=0.6333
+[92mINFO [0m:      Received: evaluate message fc2126a5-2be9-40bb-b6f8-652073edc90c
+[Client 7] Checkpoint Saved: best_model.pth (2234.8 KB)
+[Client 7] New Best Local Test Accuracy: 63.33% (Round 7) -> Saved best_model.pth
+[Client 7] evaluate | loss=1.1031 acc=0.6333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 5b20df92-c768-4e7d-ab7b-56ca4ebf124f
+[92mINFO [0m:      Received: train message 5baf7e7a-1820-44ce-b548-02335a09a11f
 [Client 7] Round 8: Fixed LR = 0.010000
-[Client 7] [Ping] Round 8 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=1.0331 Acc=0.6000 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.9493 Acc=0.6261 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.8481 Acc=0.6348 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.7652 Acc=0.6783 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.6573 Acc=0.7913 | 0.02s
-[Client 7] fit done | Round 8 | IPv4: 10.10.102.172 | loss=0.6573 acc=0.7913 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 8 (fit) -> 127.0.0.1:42597 | Latency: 0.06 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.9667 Acc=0.6000 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.8908 Acc=0.6609 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.8220 Acc=0.6783 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.7963 Acc=0.6870 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.7540 Acc=0.6870 | 0.02s
+[Client 7] fit done | Round 8 | IPv4: 10.10.102.172 | loss=0.7540 acc=0.6870 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message dd221b77-0fc7-4eb2-8bf4-b23c8654cf0c
-[Client 7] evaluate | loss=1.2691 acc=0.5667
+[92mINFO [0m:      Received: evaluate message ad7fc693-4fe0-457b-8474-9253cb638f6b
+[Client 7] Checkpoint Saved: best_model.pth (2234.8 KB)
+[Client 7] New Best Local Test Accuracy: 73.33% (Round 8) -> Saved best_model.pth
+[Client 7] evaluate | loss=1.0779 acc=0.7333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 337a7b3c-5620-4bef-b8bc-33f8a5910a12
+[92mINFO [0m:      Received: train message 4de2a127-2f71-4f4d-8447-74ed915ade65
 [Client 7] Round 9: Fixed LR = 0.010000
-[Client 7] [Ping] Round 9 (fit) -> 127.0.0.1:34769 | Latency: 0.10 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.6501 Acc=0.8174 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.6188 Acc=0.8261 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.5761 Acc=0.8348 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.5141 Acc=0.8696 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.4506 Acc=0.8783 | 0.03s
-[Client 7] fit done | Round 9 | IPv4: 10.10.102.172 | loss=0.4506 acc=0.8783 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 9 (fit) -> 127.0.0.1:42597 | Latency: 0.01 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.6925 Acc=0.7913 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.6417 Acc=0.8000 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.5739 Acc=0.8435 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.5071 Acc=0.8609 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.4562 Acc=0.8609 | 0.02s
+[Client 7] fit done | Round 9 | IPv4: 10.10.102.172 | loss=0.4562 acc=0.8609 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message dad52a00-b4ca-499f-bf63-0deb7b69eac3
-[Client 7] evaluate | loss=1.0136 acc=0.6333
+[92mINFO [0m:      Received: evaluate message f42e443f-fe15-4665-8b12-269699d00b8e
+[Client 7] evaluate | loss=1.1153 acc=0.6000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message db4837fa-2c6e-4539-93f8-7b2f0615fcd0
+[92mINFO [0m:      Received: train message e425d3fa-b69a-4eaa-add0-31b2fc125091
 [Client 7] Round 10: Fixed LR = 0.010000
-[Client 7] [Ping] Round 10 (fit) -> 127.0.0.1:34769 | Latency: 0.06 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.6372 Acc=0.7217 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.5382 Acc=0.8000 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4658 Acc=0.8609 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.4250 Acc=0.8609 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3820 Acc=0.8696 | 0.01s
-[Client 7] fit done | Round 10 | IPv4: 10.10.102.172 | loss=0.3820 acc=0.8696 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 10 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5823 Acc=0.7652 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.5178 Acc=0.8000 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4511 Acc=0.8435 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3916 Acc=0.8957 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3483 Acc=0.9043 | 0.01s
+[Client 7] fit done | Round 10 | IPv4: 10.10.102.172 | loss=0.3483 acc=0.9043 | round_time=0.05s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 2d7e5934-73ab-4653-97d7-6dd0e64b5b48
-[Client 7] evaluate | loss=1.1564 acc=0.6000
+[92mINFO [0m:      Received: evaluate message 939ffb63-e101-4929-88ec-52c5727e961f
+[Client 7] evaluate | loss=1.0601 acc=0.6000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 984f2267-0d73-42c4-bd8b-1923e69e03a8
+[92mINFO [0m:      Received: train message 6fee0d26-8ea9-40d7-8ed1-352abb1ee044
 [Client 7] Round 11: Fixed LR = 0.010000
-[Client 7] [Ping] Round 11 (fit) -> 127.0.0.1:34769 | Latency: 0.05 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.4604 Acc=0.8696 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4066 Acc=0.8957 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3756 Acc=0.8957 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3541 Acc=0.9043 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3267 Acc=0.9130 | 0.02s
-[Client 7] fit done | Round 11 | IPv4: 10.10.102.172 | loss=0.3267 acc=0.9130 | round_time=0.13s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 11 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5442 Acc=0.8000 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4839 Acc=0.8696 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4142 Acc=0.8696 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3737 Acc=0.8609 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3570 Acc=0.8783 | 0.01s
+[Client 7] fit done | Round 11 | IPv4: 10.10.102.172 | loss=0.3570 acc=0.8783 | round_time=0.05s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 3a48d011-435e-4ecc-8398-0ddeea270346
-[Client 7] evaluate | loss=1.2128 acc=0.5667
+[92mINFO [0m:      Received: evaluate message e77b552c-2500-4d69-b59d-c83f9fa45cc7
+[Client 7] evaluate | loss=0.9554 acc=0.6333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 049b2a92-6bc4-4e5e-873e-f82b28154bec
+[92mINFO [0m:      Received: train message 5139dd4d-b34f-49d8-8be6-d71dc2622fa2
 [Client 7] Round 12: Fixed LR = 0.010000
-[Client 7] [Ping] Round 12 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5995 Acc=0.8087 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4793 Acc=0.8261 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3846 Acc=0.8522 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3750 Acc=0.8870 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3576 Acc=0.8783 | 0.01s
-[Client 7] fit done | Round 12 | IPv4: 10.10.102.172 | loss=0.3576 acc=0.8783 | round_time=0.05s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 12 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5730 Acc=0.7826 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.5151 Acc=0.8000 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4393 Acc=0.8609 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3697 Acc=0.8957 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3178 Acc=0.9391 | 0.02s
+[Client 7] fit done | Round 12 | IPv4: 10.10.102.172 | loss=0.3178 acc=0.9391 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 93d7fb34-5462-4e3f-9276-d7a00337f944
-[Client 7] evaluate | loss=0.8975 acc=0.6000
+[92mINFO [0m:      Received: evaluate message 676c17b1-9dff-41b7-8118-516ae4fad777
+[Client 7] evaluate | loss=1.0599 acc=0.6333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 7c4878b9-bcd7-4e8a-ad96-9fb45c7876a4
+[92mINFO [0m:      Received: train message 6f72bd1c-110a-4279-9687-f496dbd775d9
 [Client 7] Round 13: Fixed LR = 0.010000
-[Client 7] [Ping] Round 13 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5806 Acc=0.7478 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4758 Acc=0.8087 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4068 Acc=0.8261 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3721 Acc=0.8609 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3482 Acc=0.8783 | 0.01s
-[Client 7] fit done | Round 13 | IPv4: 10.10.102.172 | loss=0.3482 acc=0.8783 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 13 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5212 Acc=0.8261 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4736 Acc=0.8435 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4068 Acc=0.8609 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3516 Acc=0.8870 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3173 Acc=0.8870 | 0.03s
+[Client 7] fit done | Round 13 | IPv4: 10.10.102.172 | loss=0.3173 acc=0.8870 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 60a403b1-bdde-4465-bda8-821038528df0
-[Client 7] evaluate | loss=0.9909 acc=0.7000
+[92mINFO [0m:      Received: evaluate message 4392bb35-5ae7-42b8-9916-f264ab1b1d3a
+[Client 7] evaluate | loss=0.7962 acc=0.7333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message e4d5b381-9548-4a27-a55c-d3c3eb70776f
+[92mINFO [0m:      Received: train message 33b612f1-b1c4-4b2e-aae0-ad1030b36ea1
 [Client 7] Round 14: Fixed LR = 0.010000
-[Client 7] [Ping] Round 14 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.6396 Acc=0.7478 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.5484 Acc=0.7652 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4293 Acc=0.8261 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3498 Acc=0.8783 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3361 Acc=0.8696 | 0.02s
-[Client 7] fit done | Round 14 | IPv4: 10.10.102.172 | loss=0.3361 acc=0.8696 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 14 (fit) -> 127.0.0.1:42597 | Latency: 0.12 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5261 Acc=0.7826 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4956 Acc=0.8000 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4463 Acc=0.8261 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3852 Acc=0.8696 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3256 Acc=0.9043 | 0.01s
+[Client 7] fit done | Round 14 | IPv4: 10.10.102.172 | loss=0.3256 acc=0.9043 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message b48aec67-c639-46d4-a4da-108862f420d2
-[Client 7] evaluate | loss=0.8926 acc=0.6667
+[92mINFO [0m:      Received: evaluate message 179f919c-2e38-4915-ae24-d998bfc1aaed
+[Client 7] evaluate | loss=1.0165 acc=0.6667
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 5592591f-abda-46f6-8a31-42db9a00ab7f
+[92mINFO [0m:      Received: train message edb67d62-b337-4927-9bba-5e4a29da4d35
 [Client 7] Round 15: Fixed LR = 0.010000
-[Client 7] [Ping] Round 15 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5023 Acc=0.8000 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4891 Acc=0.7913 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4415 Acc=0.8000 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3769 Acc=0.8522 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3186 Acc=0.8696 | 0.01s
-[Client 7] fit done | Round 15 | IPv4: 10.10.102.172 | loss=0.3186 acc=0.8696 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 15 (fit) -> 127.0.0.1:42597 | Latency: 0.05 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5569 Acc=0.7826 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.5088 Acc=0.8087 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4342 Acc=0.8348 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3703 Acc=0.8522 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3275 Acc=0.8783 | 0.02s
+[Client 7] fit done | Round 15 | IPv4: 10.10.102.172 | loss=0.3275 acc=0.8783 | round_time=0.14s | avg_epoch=0.03s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message ba9e4e26-4306-4081-b8ed-4e110b4cdd61
-[Client 7] evaluate | loss=1.0163 acc=0.6667
+[92mINFO [0m:      Received: evaluate message 21f2585e-21fe-4d86-be6c-a641905478c5
+[Client 7] evaluate | loss=0.7776 acc=0.7000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message fb6080e5-9565-41ce-9dbf-dcc53033001f
+[92mINFO [0m:      Received: train message e2ee2854-31f2-406b-b05e-b72e0fcd2723
 [Client 7] Round 16: Fixed LR = 0.010000
-[Client 7] [Ping] Round 16 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5503 Acc=0.8087 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.5167 Acc=0.8174 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4413 Acc=0.8609 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3660 Acc=0.8696 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3153 Acc=0.8870 | 0.02s
-[Client 7] fit done | Round 16 | IPv4: 10.10.102.172 | loss=0.3153 acc=0.8870 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 16 (fit) -> 127.0.0.1:42597 | Latency: 0.05 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.4706 Acc=0.8087 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4560 Acc=0.7913 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4230 Acc=0.8000 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3758 Acc=0.8348 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3264 Acc=0.8783 | 0.02s
+[Client 7] fit done | Round 16 | IPv4: 10.10.102.172 | loss=0.3264 acc=0.8783 | round_time=0.10s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message fbdd0d84-2c18-4810-83e5-4c8b18d54e39
-[Client 7] evaluate | loss=0.6925 acc=0.7333
+[92mINFO [0m:      Received: evaluate message 9aab3a0f-17a4-45fe-83d0-7bfd5f739646
+[Client 7] evaluate | loss=1.0420 acc=0.6333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 5f6d7e29-5146-4479-b713-86846385a4b1
+[92mINFO [0m:      Received: train message da7739c6-08f2-440d-9711-b5da39c8de64
 [Client 7] Round 17: Fixed LR = 0.010000
-[Client 7] [Ping] Round 17 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.4980 Acc=0.8087 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4731 Acc=0.8000 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4340 Acc=0.8174 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3862 Acc=0.8261 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3432 Acc=0.8522 | 0.01s
-[Client 7] fit done | Round 17 | IPv4: 10.10.102.172 | loss=0.3432 acc=0.8522 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 17 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5277 Acc=0.8435 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4864 Acc=0.8348 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4200 Acc=0.8435 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3552 Acc=0.8609 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3104 Acc=0.8696 | 0.03s
+[Client 7] fit done | Round 17 | IPv4: 10.10.102.172 | loss=0.3104 acc=0.8696 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 715867ac-602e-4c01-b091-a5fe915911e7
-[Client 7] evaluate | loss=0.9805 acc=0.7333
+[92mINFO [0m:      Received: evaluate message f1c5f815-713e-440b-8ad7-f0b7ff27cba9
+[Client 7] evaluate | loss=0.7225 acc=0.7000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message d3244db4-f249-457f-9cd2-52c971c05e5b
+[92mINFO [0m:      Received: train message ae960a40-ec66-4ba7-8fd0-2c63b450dc0f
 [Client 7] Round 18: Fixed LR = 0.010000
-[Client 7] [Ping] Round 18 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.4825 Acc=0.8609 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4509 Acc=0.8522 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3982 Acc=0.8870 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3395 Acc=0.8957 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2901 Acc=0.9130 | 0.01s
-[Client 7] fit done | Round 18 | IPv4: 10.10.102.172 | loss=0.2901 acc=0.9130 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 18 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3901 Acc=0.8435 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3762 Acc=0.8435 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3558 Acc=0.8522 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3236 Acc=0.8609 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2842 Acc=0.8957 | 0.02s
+[Client 7] fit done | Round 18 | IPv4: 10.10.102.172 | loss=0.2842 acc=0.8957 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message f1a1f8a4-738b-4e39-908e-1e09bec2f2e5
-[Client 7] evaluate | loss=0.7092 acc=0.7333
+[92mINFO [0m:      Received: evaluate message dc4f1f21-1614-4174-975a-88e2465bea57
+[Client 7] evaluate | loss=0.9917 acc=0.6667
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message d2c4bda2-f00c-4171-b044-88225ab75443
+[92mINFO [0m:      Received: train message 6d090252-bd21-4c93-9ead-b4a51e0deca9
 [Client 7] Round 19: Fixed LR = 0.010000
-[Client 7] [Ping] Round 19 (fit) -> 127.0.0.1:34769 | Latency: 0.11 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.5005 Acc=0.7478 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4717 Acc=0.7652 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.4116 Acc=0.8174 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3465 Acc=0.8522 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2997 Acc=0.8783 | 0.01s
-[Client 7] fit done | Round 19 | IPv4: 10.10.102.172 | loss=0.2997 acc=0.8783 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 19 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.4423 Acc=0.8609 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3974 Acc=0.8609 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3458 Acc=0.8696 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3014 Acc=0.8870 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2677 Acc=0.9130 | 0.01s
+[Client 7] fit done | Round 19 | IPv4: 10.10.102.172 | loss=0.2677 acc=0.9130 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 83dc70b0-f97e-4ea9-86ac-bee5e26ecabb
-[Client 7] evaluate | loss=1.0215 acc=0.6667
+[92mINFO [0m:      Received: evaluate message d96cf0b4-b142-4367-a71f-af58f645d047
+[Client 7] Checkpoint Saved: best_model.pth (2234.8 KB)
+[Client 7] New Best Local Test Accuracy: 76.67% (Round 19) -> Saved best_model.pth
+[Client 7] evaluate | loss=0.7051 acc=0.7667
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 3cbdbcf8-c9dd-4d73-aa58-feaafe727373
+[92mINFO [0m:      Received: train message b4b15698-fa17-43f4-a599-3ea8d2906a09
 [Client 7] Round 20: Fixed LR = 0.010000
-[Client 7] [Ping] Round 20 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.4637 Acc=0.8870 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4312 Acc=0.8783 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3832 Acc=0.8870 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3376 Acc=0.8957 | 0.03s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.3031 Acc=0.8957 | 0.03s
-[Client 7] fit done | Round 20 | IPv4: 10.10.102.172 | loss=0.3031 acc=0.8957 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 20 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3556 Acc=0.8783 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3341 Acc=0.8783 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3119 Acc=0.8696 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2846 Acc=0.8783 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2542 Acc=0.9391 | 0.02s
+[Client 7] fit done | Round 20 | IPv4: 10.10.102.172 | loss=0.2542 acc=0.9391 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 91c145a0-03ea-4b94-abdf-c500991b0a8b
-[Client 7] evaluate | loss=0.6062 acc=0.7667
+[92mINFO [0m:      Received: evaluate message 1acb5ba9-7d6f-4ae2-b144-fc957ba873e5
+[Client 7] evaluate | loss=0.7047 acc=0.7667
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 0639f808-4db5-4993-952b-9e32b0d32a79
+[92mINFO [0m:      Received: train message 24017baf-40bf-46c1-b7ef-6d3bd0275767
 [Client 7] Round 21: Fixed LR = 0.010000
-[Client 7] [Ping] Round 21 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.4510 Acc=0.8348 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.4170 Acc=0.8348 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3738 Acc=0.8696 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3278 Acc=0.8783 | 0.03s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2849 Acc=0.9304 | 0.02s
-[Client 7] fit done | Round 21 | IPv4: 10.10.102.172 | loss=0.2849 acc=0.9304 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 21 (fit) -> 127.0.0.1:42597 | Latency: 0.05 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.4036 Acc=0.8522 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3498 Acc=0.8783 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2981 Acc=0.8957 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2624 Acc=0.9217 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2382 Acc=0.9217 | 0.02s
+[Client 7] fit done | Round 21 | IPv4: 10.10.102.172 | loss=0.2382 acc=0.9217 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 89b7768b-c32c-4575-8242-d8780b309407
-[Client 7] evaluate | loss=0.7876 acc=0.8000
+[92mINFO [0m:      Received: evaluate message 17d7e2e6-f4ce-4f78-885a-e7a17cfc9225
+[Client 7] Checkpoint Saved: best_model.pth (2234.8 KB)
+[Client 7] New Best Local Test Accuracy: 80.00% (Round 21) -> Saved best_model.pth
+[Client 7] evaluate | loss=0.6616 acc=0.8000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 9a6b07b7-171a-4990-8569-5f6080ca779b
+[92mINFO [0m:      Received: train message 9389a1b5-24ad-48b5-a650-061364ad71e6
 [Client 7] Round 22: Fixed LR = 0.010000
-[Client 7] [Ping] Round 22 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.4096 Acc=0.8957 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3762 Acc=0.8783 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3381 Acc=0.8870 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.3006 Acc=0.9043 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2673 Acc=0.9130 | 0.01s
-[Client 7] fit done | Round 22 | IPv4: 10.10.102.172 | loss=0.2673 acc=0.9130 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 22 (fit) -> 127.0.0.1:42597 | Latency: 0.01 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3328 Acc=0.8870 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3050 Acc=0.8957 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2782 Acc=0.9130 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2513 Acc=0.9304 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2249 Acc=0.9391 | 0.01s
+[Client 7] fit done | Round 22 | IPv4: 10.10.102.172 | loss=0.2249 acc=0.9391 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message e5d86283-ec81-42d0-a7ae-e6d008858cb1
-[Client 7] evaluate | loss=0.7580 acc=0.7667
+[92mINFO [0m:      Received: evaluate message 612361f6-d0b5-4428-8cfc-d2292b2bc45c
+[Client 7] evaluate | loss=0.7625 acc=0.7333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message d6507205-c80b-4b3d-bb09-be2306912c96
+[92mINFO [0m:      Received: train message e46147be-ab69-4ea4-9f9e-263538e3005e
 [Client 7] Round 23: Fixed LR = 0.010000
-[Client 7] [Ping] Round 23 (fit) -> 127.0.0.1:34769 | Latency: 0.01 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.4094 Acc=0.8522 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3711 Acc=0.8696 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3298 Acc=0.8870 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2952 Acc=0.9217 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2674 Acc=0.9217 | 0.01s
-[Client 7] fit done | Round 23 | IPv4: 10.10.102.172 | loss=0.2674 acc=0.9217 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 23 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3855 Acc=0.8696 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3410 Acc=0.8870 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2915 Acc=0.9130 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2508 Acc=0.9304 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2233 Acc=0.9304 | 0.01s
+[Client 7] fit done | Round 23 | IPv4: 10.10.102.172 | loss=0.2233 acc=0.9304 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message c0b0195a-4720-4e1e-9822-34c6bbd88d5d
-[Client 7] evaluate | loss=0.7747 acc=0.8333
+[92mINFO [0m:      Received: evaluate message 40d7efb3-0c04-4c5d-bbef-8381a9e78b26
+[Client 7] evaluate | loss=0.6895 acc=0.8000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 9b829912-6a30-425f-9cce-09109c4a0414
+[92mINFO [0m:      Received: train message a4ae21bd-f8a2-4abb-8634-f4de80400246
 [Client 7] Round 24: Fixed LR = 0.010000
-[Client 7] [Ping] Round 24 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3791 Acc=0.8957 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3447 Acc=0.9217 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3059 Acc=0.9130 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2702 Acc=0.9217 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2421 Acc=0.9130 | 0.01s
-[Client 7] fit done | Round 24 | IPv4: 10.10.102.172 | loss=0.2421 acc=0.9130 | round_time=0.05s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 24 (fit) -> 127.0.0.1:42597 | Latency: 0.01 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3310 Acc=0.8696 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3067 Acc=0.8783 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2776 Acc=0.8870 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2461 Acc=0.9130 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2175 Acc=0.9478 | 0.01s
+[Client 7] fit done | Round 24 | IPv4: 10.10.102.172 | loss=0.2175 acc=0.9478 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message caa006e1-dca6-410e-8fc6-7ca8d42bfb0a
-[Client 7] evaluate | loss=0.6607 acc=0.8667
+[92mINFO [0m:      Received: evaluate message 8b6f6d50-c6d7-4a00-8616-37bb2009b6a5
+[Client 7] evaluate | loss=0.7554 acc=0.7667
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message ab29fa53-2df2-49de-afc8-b9e8cc3c7582
+[92mINFO [0m:      Received: train message f7197a71-1ba7-46f9-acf5-ac3f942d237c
 [Client 7] Round 25: Fixed LR = 0.010000
-[Client 7] [Ping] Round 25 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3970 Acc=0.8435 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3556 Acc=0.8783 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.3130 Acc=0.8783 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2725 Acc=0.8870 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2385 Acc=0.9217 | 0.02s
-[Client 7] fit done | Round 25 | IPv4: 10.10.102.172 | loss=0.2385 acc=0.9217 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 25 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3738 Acc=0.8957 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3273 Acc=0.8957 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2813 Acc=0.9043 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2461 Acc=0.9043 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2190 Acc=0.9130 | 0.02s
+[Client 7] fit done | Round 25 | IPv4: 10.10.102.172 | loss=0.2190 acc=0.9130 | round_time=0.13s | avg_epoch=0.03s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 63a5da14-d77c-472d-8731-52e2792aeb2f
-[Client 7] evaluate | loss=0.7056 acc=0.8667
+[92mINFO [0m:      Received: evaluate message 0154b318-ce26-4694-b2a9-09d66a5da1fb
+[Client 7] Checkpoint Saved: best_model.pth (2234.8 KB)
+[Client 7] New Best Local Test Accuracy: 83.33% (Round 25) -> Saved best_model.pth
+[Client 7] evaluate | loss=0.6167 acc=0.8333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 9e8f7344-7447-46a1-8d12-91dc30432d01
+[92mINFO [0m:      Received: train message c286b591-697f-4dc6-8fe2-631aa85b3d85
 [Client 7] Round 26: Fixed LR = 0.010000
-[Client 7] [Ping] Round 26 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3460 Acc=0.9043 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3189 Acc=0.9043 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2874 Acc=0.9043 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2560 Acc=0.9130 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2281 Acc=0.9217 | 0.01s
-[Client 7] fit done | Round 26 | IPv4: 10.10.102.172 | loss=0.2281 acc=0.9217 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 26 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3213 Acc=0.8609 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2982 Acc=0.8696 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2736 Acc=0.8783 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2451 Acc=0.9391 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2143 Acc=0.9652 | 0.03s
+[Client 7] fit done | Round 26 | IPv4: 10.10.102.172 | loss=0.2143 acc=0.9652 | round_time=0.14s | avg_epoch=0.03s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message cc399ca9-ae01-455f-9181-2a15cfe091f1
-[Client 7] evaluate | loss=0.7468 acc=0.8667
+[92mINFO [0m:      Received: evaluate message 3f4b2736-836b-4d8c-87d0-e7c926c859b0
+[Client 7] evaluate | loss=0.6814 acc=0.8000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message b87c8e5a-5b4b-4f68-a200-875a5661f628
+[92mINFO [0m:      Received: train message 4f573546-4e7c-45df-aa69-6b85a1874c3b
 [Client 7] Round 27: Fixed LR = 0.010000
-[Client 7] [Ping] Round 27 (fit) -> 127.0.0.1:34769 | Latency: 0.05 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3939 Acc=0.8609 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3396 Acc=0.9043 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2959 Acc=0.9130 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2647 Acc=0.9304 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2408 Acc=0.9391 | 0.01s
-[Client 7] fit done | Round 27 | IPv4: 10.10.102.172 | loss=0.2408 acc=0.9391 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 27 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3666 Acc=0.9130 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3330 Acc=0.9304 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2908 Acc=0.9130 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2492 Acc=0.9304 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2144 Acc=0.9304 | 0.01s
+[Client 7] fit done | Round 27 | IPv4: 10.10.102.172 | loss=0.2144 acc=0.9304 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 7d30d173-b33a-44e3-9e82-49505a58db9e
-[Client 7] evaluate | loss=0.6379 acc=0.8333
+[92mINFO [0m:      Received: evaluate message 19c4e277-273d-486f-a711-445c89536071
+[Client 7] evaluate | loss=0.5858 acc=0.8333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 89830882-8c57-4786-92bd-03e214764d77
+[92mINFO [0m:      Received: train message e39c38fd-f426-4767-9ebb-7c7d120057b0
 [Client 7] Round 28: Fixed LR = 0.010000
-[Client 7] [Ping] Round 28 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3336 Acc=0.8783 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3027 Acc=0.8870 | 0.03s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2706 Acc=0.9043 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2408 Acc=0.9217 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2158 Acc=0.9304 | 0.01s
-[Client 7] fit done | Round 28 | IPv4: 10.10.102.172 | loss=0.2158 acc=0.9304 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 28 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3417 Acc=0.8609 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3215 Acc=0.8609 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2924 Acc=0.8870 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2564 Acc=0.9217 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2217 Acc=0.9478 | 0.02s
+[Client 7] fit done | Round 28 | IPv4: 10.10.102.172 | loss=0.2217 acc=0.9478 | round_time=0.13s | avg_epoch=0.03s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message a7e7f552-7257-457f-818b-c536a363e6fc
-[Client 7] evaluate | loss=0.7641 acc=0.8667
+[92mINFO [0m:      Received: evaluate message 3e4af8f7-bb3f-4670-9d0f-50bb48f35a89
+[Client 7] Checkpoint Saved: best_model.pth (2234.8 KB)
+[Client 7] New Best Local Test Accuracy: 90.00% (Round 28) -> Saved best_model.pth
+[Client 7] evaluate | loss=0.6260 acc=0.9000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 60bf3f29-8e4e-4025-8e1d-6caa0d138307
+[92mINFO [0m:      Received: train message a26705c6-9420-45bd-9569-72f7f6580083
 [Client 7] Round 29: Fixed LR = 0.010000
-[Client 7] [Ping] Round 29 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3720 Acc=0.9130 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3325 Acc=0.9043 | 0.03s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2888 Acc=0.9478 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2472 Acc=0.9565 | 0.03s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2169 Acc=0.9565 | 0.03s
-[Client 7] fit done | Round 29 | IPv4: 10.10.102.172 | loss=0.2169 acc=0.9565 | round_time=0.13s | avg_epoch=0.03s | weights=2228.9KB
+[Client 7] [Ping] Round 29 (fit) -> 127.0.0.1:42597 | Latency: 0.05 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3546 Acc=0.9043 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3267 Acc=0.9130 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2911 Acc=0.9130 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2535 Acc=0.9304 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2184 Acc=0.9304 | 0.01s
+[Client 7] fit done | Round 29 | IPv4: 10.10.102.172 | loss=0.2184 acc=0.9304 | round_time=0.05s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 41dad0b3-dc4b-4c5a-854d-c0d143f883e7
-[Client 7] evaluate | loss=0.6345 acc=0.8667
+[92mINFO [0m:      Received: evaluate message 352a4ada-0f7e-40c5-bf04-e6a3d837595b
+[Client 7] evaluate | loss=0.6199 acc=0.7667
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message de97edd6-7a01-4339-b6d6-6a0cde7df0d2
+[92mINFO [0m:      Received: train message 511604be-cd8c-4972-b122-c5d2d7eb521f
 [Client 7] Round 30: Fixed LR = 0.010000
-[Client 7] [Ping] Round 30 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3106 Acc=0.8870 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2827 Acc=0.9043 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2556 Acc=0.8957 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2306 Acc=0.9043 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2081 Acc=0.9217 | 0.01s
-[Client 7] fit done | Round 30 | IPv4: 10.10.102.172 | loss=0.2081 acc=0.9217 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 30 (fit) -> 127.0.0.1:42597 | Latency: 0.01 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3801 Acc=0.8435 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3412 Acc=0.8435 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2962 Acc=0.8870 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2554 Acc=0.9391 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2215 Acc=0.9478 | 0.02s
+[Client 7] fit done | Round 30 | IPv4: 10.10.102.172 | loss=0.2215 acc=0.9478 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 20649aba-6cdd-4c53-82c7-d485d9a89bda
-[Client 7] evaluate | loss=0.6285 acc=0.9000
+[92mINFO [0m:      Received: evaluate message 5f7cc8b5-db13-4ec0-a702-5c73795c0f4e
+[Client 7] evaluate | loss=0.6668 acc=0.8667
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 5fd243c1-d1d8-432d-a025-b59a9eeca9ba
+[92mINFO [0m:      Received: train message 2f981ac8-70b0-4a05-a08b-c1544c8336cf
 [Client 7] Round 31: Fixed LR = 0.010000
-[Client 7] [Ping] Round 31 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3199 Acc=0.9304 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2811 Acc=0.9478 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2479 Acc=0.9565 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2228 Acc=0.9652 | 0.03s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2015 Acc=0.9652 | 0.01s
-[Client 7] fit done | Round 31 | IPv4: 10.10.102.172 | loss=0.2015 acc=0.9652 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 31 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3289 Acc=0.8957 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3019 Acc=0.9043 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2722 Acc=0.9217 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2428 Acc=0.9304 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2151 Acc=0.9478 | 0.02s
+[Client 7] fit done | Round 31 | IPv4: 10.10.102.172 | loss=0.2151 acc=0.9478 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 226cf9d7-eb25-4d90-819c-5adb77de5186
-[Client 7] evaluate | loss=0.6533 acc=0.8333
+[92mINFO [0m:      Received: evaluate message e7b9c86c-f456-4338-91c3-5d19221f4c0e
+[Client 7] evaluate | loss=0.5788 acc=0.9000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 2ab298b8-5ab3-4f80-b367-217767b4f2ba
+[92mINFO [0m:      Received: train message acdd9667-6b42-42cb-9647-8ab082f72210
 [Client 7] Round 32: Fixed LR = 0.010000
-[Client 7] [Ping] Round 32 (fit) -> 127.0.0.1:34769 | Latency: 0.06 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3229 Acc=0.9043 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2841 Acc=0.9130 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2484 Acc=0.9217 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2187 Acc=0.9304 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1957 Acc=0.9391 | 0.01s
-[Client 7] fit done | Round 32 | IPv4: 10.10.102.172 | loss=0.1957 acc=0.9391 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 32 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3598 Acc=0.8783 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.3174 Acc=0.9043 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2735 Acc=0.9304 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2367 Acc=0.9304 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.2064 Acc=0.9478 | 0.02s
+[Client 7] fit done | Round 32 | IPv4: 10.10.102.172 | loss=0.2064 acc=0.9478 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 2a233c84-08c9-4d43-94be-f335ddca2c9d
-[Client 7] evaluate | loss=0.5744 acc=0.9000
+[92mINFO [0m:      Received: evaluate message 2b242c85-4001-4ffe-b133-009695245242
+[Client 7] evaluate | loss=0.6197 acc=0.9000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 6ed1f387-ce99-4b34-a1fe-dda945462eeb
+[92mINFO [0m:      Received: train message f90f2796-7683-435f-a529-fc865376817e
 [Client 7] Round 33: Fixed LR = 0.010000
-[Client 7] [Ping] Round 33 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3018 Acc=0.9043 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2621 Acc=0.9304 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2292 Acc=0.9478 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2027 Acc=0.9565 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1808 Acc=0.9652 | 0.02s
-[Client 7] fit done | Round 33 | IPv4: 10.10.102.172 | loss=0.1808 acc=0.9652 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 33 (fit) -> 127.0.0.1:42597 | Latency: 0.08 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3118 Acc=0.9043 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2773 Acc=0.9043 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2444 Acc=0.9130 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2167 Acc=0.9391 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1932 Acc=0.9391 | 0.03s
+[Client 7] fit done | Round 33 | IPv4: 10.10.102.172 | loss=0.1932 acc=0.9391 | round_time=0.14s | avg_epoch=0.03s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message e343db95-75ea-4cd3-948e-4b710cac6eb0
-[Client 7] evaluate | loss=0.6099 acc=0.8667
+[92mINFO [0m:      Received: evaluate message 0ea56a86-6bc0-4fcb-a0c7-895ebac79588
+[Client 7] evaluate | loss=0.5928 acc=0.8333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message a07774c5-1a6d-4e7c-a41d-df9b0facd247
+[92mINFO [0m:      Received: train message d6410b9c-42ee-4976-a2b6-438c35b3ab21
 [Client 7] Round 34: Fixed LR = 0.010000
-[Client 7] [Ping] Round 34 (fit) -> 127.0.0.1:34769 | Latency: 0.01 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3099 Acc=0.9130 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2714 Acc=0.9130 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2324 Acc=0.9217 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1992 Acc=0.9478 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1753 Acc=0.9391 | 0.01s
-[Client 7] fit done | Round 34 | IPv4: 10.10.102.172 | loss=0.1753 acc=0.9391 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 34 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3415 Acc=0.8957 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2992 Acc=0.9130 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2539 Acc=0.9391 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2164 Acc=0.9565 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1892 Acc=0.9652 | 0.01s
+[Client 7] fit done | Round 34 | IPv4: 10.10.102.172 | loss=0.1892 acc=0.9652 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 4cbde5a3-2626-45fd-a213-866839b157a3
-[Client 7] evaluate | loss=0.5834 acc=0.9000
+[92mINFO [0m:      Received: evaluate message 53d424ca-8c9e-424b-8cb5-6ba025270a95
+[Client 7] evaluate | loss=0.5668 acc=0.9000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 95fab86e-34f1-4503-b684-17b8d11688e7
+[92mINFO [0m:      Received: train message ea89603b-e633-409b-b162-b638b622f1f7
 [Client 7] Round 35: Fixed LR = 0.010000
-[Client 7] [Ping] Round 35 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2960 Acc=0.9130 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2559 Acc=0.9391 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2274 Acc=0.9478 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2030 Acc=0.9565 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1783 Acc=0.9565 | 0.02s
-[Client 7] fit done | Round 35 | IPv4: 10.10.102.172 | loss=0.1783 acc=0.9565 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 35 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2932 Acc=0.8783 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2606 Acc=0.8957 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2296 Acc=0.9130 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.2033 Acc=0.9130 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1813 Acc=0.9304 | 0.02s
+[Client 7] fit done | Round 35 | IPv4: 10.10.102.172 | loss=0.1813 acc=0.9304 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message c24a21a4-7c14-437e-9fc2-a5b56e305a01
-[Client 7] evaluate | loss=0.6001 acc=0.9000
+[92mINFO [0m:      Received: evaluate message 808c895a-228f-4305-92b4-7855d99c6ee3
+[Client 7] Checkpoint Saved: best_model.pth (2234.8 KB)
+[Client 7] New Best Local Test Accuracy: 93.33% (Round 35) -> Saved best_model.pth
+[Client 7] evaluate | loss=0.5364 acc=0.9333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message e7c2fba1-7541-46a8-965d-addbadccb858
+[92mINFO [0m:      Received: train message 7c828b23-28fa-44dd-a972-af42937f16bd
 [Client 7] Round 36: Fixed LR = 0.010000
-[Client 7] [Ping] Round 36 (fit) -> 127.0.0.1:34769 | Latency: 0.06 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3030 Acc=0.9043 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2607 Acc=0.9217 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2228 Acc=0.9217 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1911 Acc=0.9478 | 0.03s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1678 Acc=0.9478 | 0.02s
-[Client 7] fit done | Round 36 | IPv4: 10.10.102.172 | loss=0.1678 acc=0.9478 | round_time=0.13s | avg_epoch=0.03s | weights=2228.9KB
+[Client 7] [Ping] Round 36 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3018 Acc=0.9130 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2657 Acc=0.9217 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2301 Acc=0.9652 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1989 Acc=0.9652 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1732 Acc=0.9652 | 0.02s
+[Client 7] fit done | Round 36 | IPv4: 10.10.102.172 | loss=0.1732 acc=0.9652 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message fe93ccfc-824d-4b30-ba8c-ff0e751dc5ab
-[Client 7] evaluate | loss=0.6183 acc=0.9000
+[92mINFO [0m:      Received: evaluate message 11555e22-9892-45de-8e5e-98e7dcdbf278
+[Client 7] evaluate | loss=0.5598 acc=0.9000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 226534c7-4856-4287-94d7-f756471d6de6
+[92mINFO [0m:      Received: train message d195a286-d046-4253-8307-2441e4053efb
 [Client 7] Round 37: Fixed LR = 0.010000
-[Client 7] [Ping] Round 37 (fit) -> 127.0.0.1:34769 | Latency: 0.08 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2860 Acc=0.9130 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2392 Acc=0.9478 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2047 Acc=0.9478 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1847 Acc=0.9565 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1687 Acc=0.9652 | 0.01s
-[Client 7] fit done | Round 37 | IPv4: 10.10.102.172 | loss=0.1687 acc=0.9652 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 37 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3007 Acc=0.8783 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2557 Acc=0.8870 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2176 Acc=0.9130 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1899 Acc=0.9217 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1697 Acc=0.9304 | 0.02s
+[Client 7] fit done | Round 37 | IPv4: 10.10.102.172 | loss=0.1697 acc=0.9304 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 687c8bff-f32d-4502-b98c-c3fd12e9766d
-[Client 7] evaluate | loss=0.5590 acc=0.9000
+[92mINFO [0m:      Received: evaluate message f66d48ae-693f-4f43-a02f-400f240f8caf
+[Client 7] evaluate | loss=0.5005 acc=0.9333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message df3e2fb2-f84a-4a4f-8878-ef347794d7ed
+[92mINFO [0m:      Received: train message e253a2e7-f3e0-49a0-b685-8b749a105f00
 [Client 7] Round 38: Fixed LR = 0.010000
-[Client 7] [Ping] Round 38 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2878 Acc=0.9391 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2470 Acc=0.9565 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2078 Acc=0.9565 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1774 Acc=0.9478 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1567 Acc=0.9565 | 0.01s
-[Client 7] fit done | Round 38 | IPv4: 10.10.102.172 | loss=0.1567 acc=0.9565 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 38 (fit) -> 127.0.0.1:42597 | Latency: 0.01 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2849 Acc=0.9130 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2439 Acc=0.9478 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2072 Acc=0.9652 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1784 Acc=0.9652 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1579 Acc=0.9652 | 0.01s
+[Client 7] fit done | Round 38 | IPv4: 10.10.102.172 | loss=0.1579 acc=0.9652 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 04bc0cbd-c2a4-44d6-92c7-997f41bf6ccc
-[Client 7] evaluate | loss=0.5380 acc=0.9333
+[92mINFO [0m:      Received: evaluate message c35a58c3-225b-4a9c-b902-1e04612e294f
+[Client 7] evaluate | loss=0.5343 acc=0.9000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 6021d57b-231f-475b-b1ae-a6326ffd24b2
+[92mINFO [0m:      Received: train message b06fdbdc-90c9-45b2-801e-513cca01fdb9
 [Client 7] Round 39: Fixed LR = 0.010000
-[Client 7] [Ping] Round 39 (fit) -> 127.0.0.1:34769 | Latency: 0.05 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2814 Acc=0.9130 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2374 Acc=0.9217 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2031 Acc=0.9304 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1787 Acc=0.9565 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1601 Acc=0.9565 | 0.01s
-[Client 7] fit done | Round 39 | IPv4: 10.10.102.172 | loss=0.1601 acc=0.9565 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 39 (fit) -> 127.0.0.1:42597 | Latency: 0.05 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2765 Acc=0.9043 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2364 Acc=0.9043 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2019 Acc=0.9391 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1759 Acc=0.9391 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1571 Acc=0.9478 | 0.01s
+[Client 7] fit done | Round 39 | IPv4: 10.10.102.172 | loss=0.1571 acc=0.9478 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 80dad865-8b81-448e-9f6e-f64a1ce6fd6d
-[Client 7] evaluate | loss=0.6088 acc=0.8667
+[92mINFO [0m:      Received: evaluate message c7b1b018-8cb9-4816-a6ca-436b30f2f45e
+[Client 7] evaluate | loss=0.5048 acc=0.9333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 648bebf6-9759-4276-9490-44ab2da56015
+[92mINFO [0m:      Received: train message 90baeb8c-c5ba-4a35-998f-109a96cca1c2
 [Client 7] Round 40: Fixed LR = 0.010000
-[Client 7] [Ping] Round 40 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2925 Acc=0.9217 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2447 Acc=0.9391 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2008 Acc=0.9391 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1693 Acc=0.9478 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1501 Acc=0.9652 | 0.01s
-[Client 7] fit done | Round 40 | IPv4: 10.10.102.172 | loss=0.1501 acc=0.9652 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 40 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2710 Acc=0.9478 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2293 Acc=0.9565 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1964 Acc=0.9652 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1715 Acc=0.9652 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1505 Acc=0.9652 | 0.02s
+[Client 7] fit done | Round 40 | IPv4: 10.10.102.172 | loss=0.1505 acc=0.9652 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message a8a1ae48-3a0e-45fa-b970-4ee029927c75
-[Client 7] evaluate | loss=0.5142 acc=0.9333
+[92mINFO [0m:      Received: evaluate message a6fa8b07-9a7b-4be1-833f-4ad215fd652f
+[Client 7] evaluate | loss=0.5456 acc=0.9000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message b34ef809-d104-48f3-aafc-ddfda2f91d55
+[92mINFO [0m:      Received: train message f27ffd5e-22ec-4b96-a675-7280875ae09a
 [Client 7] Round 41: Fixed LR = 0.010000
-[Client 7] [Ping] Round 41 (fit) -> 127.0.0.1:34769 | Latency: 0.06 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2765 Acc=0.9304 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2298 Acc=0.9391 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1948 Acc=0.9565 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1702 Acc=0.9565 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1504 Acc=0.9739 | 0.01s
-[Client 7] fit done | Round 41 | IPv4: 10.10.102.172 | loss=0.1504 acc=0.9739 | round_time=0.10s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 41 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2705 Acc=0.9217 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2357 Acc=0.9304 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2020 Acc=0.9391 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1730 Acc=0.9391 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1502 Acc=0.9391 | 0.01s
+[Client 7] fit done | Round 41 | IPv4: 10.10.102.172 | loss=0.1502 acc=0.9391 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 5a232768-6861-42f5-b94d-9720fac5fbc1
-[Client 7] evaluate | loss=0.6425 acc=0.8667
+[92mINFO [0m:      Received: evaluate message cd932479-4408-45af-bf24-bd8903d72543
+[Client 7] evaluate | loss=0.5156 acc=0.9333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message d867de42-e2a5-4794-8505-4226fdd574dc
+[92mINFO [0m:      Received: train message 133d2c42-9792-4e88-a9ef-3d67a0e8361b
 [Client 7] Round 42: Fixed LR = 0.010000
-[Client 7] [Ping] Round 42 (fit) -> 127.0.0.1:34769 | Latency: 0.09 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3029 Acc=0.9130 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2435 Acc=0.9304 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1946 Acc=0.9391 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1616 Acc=0.9478 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1414 Acc=0.9565 | 0.02s
-[Client 7] fit done | Round 42 | IPv4: 10.10.102.172 | loss=0.1414 acc=0.9565 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 42 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2656 Acc=0.9304 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2240 Acc=0.9565 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1930 Acc=0.9652 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1680 Acc=0.9652 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1439 Acc=0.9652 | 0.02s
+[Client 7] fit done | Round 42 | IPv4: 10.10.102.172 | loss=0.1439 acc=0.9652 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 3a4b6b12-9237-461e-90c5-d4976d86a42f
-[Client 7] evaluate | loss=0.5020 acc=0.9333
+[92mINFO [0m:      Received: evaluate message a0654ea0-819c-410f-88dc-4cb8f005dafc
+[Client 7] evaluate | loss=0.5307 acc=0.9000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message c9e406b4-ad46-4cbd-a3f4-bca03b9b40bf
+[92mINFO [0m:      Received: train message 2814c0b8-d51c-48f7-8701-2ef5c006e2fd
 [Client 7] Round 43: Fixed LR = 0.010000
-[Client 7] [Ping] Round 43 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2697 Acc=0.9217 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2286 Acc=0.9391 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1940 Acc=0.9565 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1655 Acc=0.9652 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1422 Acc=0.9652 | 0.02s
-[Client 7] fit done | Round 43 | IPv4: 10.10.102.172 | loss=0.1422 acc=0.9652 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 43 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2741 Acc=0.9391 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2368 Acc=0.9304 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1982 Acc=0.9304 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1647 Acc=0.9565 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1406 Acc=0.9565 | 0.02s
+[Client 7] fit done | Round 43 | IPv4: 10.10.102.172 | loss=0.1406 acc=0.9565 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 3d3de20a-1227-4196-8018-babf303deed5
-[Client 7] evaluate | loss=0.5878 acc=0.8667
+[92mINFO [0m:      Received: evaluate message 10c729e8-9eed-4c95-9509-51dad6da5c93
+[Client 7] evaluate | loss=0.4911 acc=0.9333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 2ef6ddf7-230e-47c2-be45-de53f393b4c3
+[92mINFO [0m:      Received: train message c981dccd-c2f3-41ac-aaf0-649e4199802d
 [Client 7] Round 44: Fixed LR = 0.010000
-[Client 7] [Ping] Round 44 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2934 Acc=0.9304 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2471 Acc=0.9478 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1979 Acc=0.9478 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1587 Acc=0.9565 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1346 Acc=0.9739 | 0.03s
-[Client 7] fit done | Round 44 | IPv4: 10.10.102.172 | loss=0.1346 acc=0.9739 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 44 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2519 Acc=0.9391 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2127 Acc=0.9652 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1843 Acc=0.9565 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1599 Acc=0.9652 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1354 Acc=0.9652 | 0.01s
+[Client 7] fit done | Round 44 | IPv4: 10.10.102.172 | loss=0.1354 acc=0.9652 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message ea6f1af4-d794-4306-8a2e-8ece83709ed9
-[Client 7] evaluate | loss=0.5060 acc=0.9333
+[92mINFO [0m:      Received: evaluate message ed46c8f4-b3dd-45e2-b687-9322bdf5d468
+[Client 7] evaluate | loss=0.5034 acc=0.9333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 1b771a1b-c839-43cf-8c63-0ff38fffec97
+[92mINFO [0m:      Received: train message 445b41e7-346e-42fc-a47e-6f61ef95c1b3
 [Client 7] Round 45: Fixed LR = 0.010000
-[Client 7] [Ping] Round 45 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2681 Acc=0.9304 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2291 Acc=0.9478 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1969 Acc=0.9478 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1684 Acc=0.9739 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1438 Acc=0.9739 | 0.01s
-[Client 7] fit done | Round 45 | IPv4: 10.10.102.172 | loss=0.1438 acc=0.9739 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 45 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2624 Acc=0.9391 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2224 Acc=0.9565 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1819 Acc=0.9565 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1479 Acc=0.9565 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1250 Acc=0.9652 | 0.02s
+[Client 7] fit done | Round 45 | IPv4: 10.10.102.172 | loss=0.1250 acc=0.9652 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 4894c204-7701-4773-b404-a993859f7b5a
-[Client 7] evaluate | loss=0.5940 acc=0.8667
+[92mINFO [0m:      Received: evaluate message ac32f8af-084f-4514-8183-81d465b9274a
+[Client 7] evaluate | loss=0.4806 acc=0.9000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 35434ef0-d0aa-4299-a89d-dbce84c2b0d2
+[92mINFO [0m:      Received: train message 3f509110-dfe4-4a9a-8f9c-dcc68b683cbe
 [Client 7] Round 46: Fixed LR = 0.010000
-[Client 7] [Ping] Round 46 (fit) -> 127.0.0.1:34769 | Latency: 0.05 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3001 Acc=0.9130 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2529 Acc=0.9478 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.2027 Acc=0.9478 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1626 Acc=0.9478 | 0.03s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1375 Acc=0.9652 | 0.02s
-[Client 7] fit done | Round 46 | IPv4: 10.10.102.172 | loss=0.1375 acc=0.9652 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 46 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2456 Acc=0.9478 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2054 Acc=0.9565 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1741 Acc=0.9565 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1478 Acc=0.9565 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1245 Acc=0.9652 | 0.01s
+[Client 7] fit done | Round 46 | IPv4: 10.10.102.172 | loss=0.1245 acc=0.9652 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 9367e9f9-787b-4d2e-a248-e001396997da
-[Client 7] evaluate | loss=0.4911 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message b3dcbb07-503f-4307-9ea7-bb329f1dc16f
-[Client 7] Round 47: Fixed LR = 0.010000
-[Client 7] [Ping] Round 47 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2617 Acc=0.9304 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2207 Acc=0.9304 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1888 Acc=0.9565 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1629 Acc=0.9652 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1398 Acc=0.9739 | 0.02s
-[Client 7] fit done | Round 47 | IPv4: 10.10.102.172 | loss=0.1398 acc=0.9739 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 91611346-dc5b-4f29-ba4a-60f71b5d2e3a
-[Client 7] evaluate | loss=0.6256 acc=0.8667
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 3c5d2d24-7a98-425f-9dd2-2e1b82874c5c
-[Client 7] Round 48: Fixed LR = 0.010000
-[Client 7] [Ping] Round 48 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2912 Acc=0.9130 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2366 Acc=0.9391 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1875 Acc=0.9391 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1518 Acc=0.9565 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1282 Acc=0.9739 | 0.02s
-[Client 7] fit done | Round 48 | IPv4: 10.10.102.172 | loss=0.1282 acc=0.9739 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message a0b279f3-3b4e-477a-b96d-98afa03d8a7c
-[Client 7] evaluate | loss=0.4799 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 457b2028-16ca-4b41-bf8d-ffbec5d8f49e
-[Client 7] Round 49: Fixed LR = 0.010000
-[Client 7] [Ping] Round 49 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2538 Acc=0.9391 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2139 Acc=0.9565 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1800 Acc=0.9565 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1511 Acc=0.9565 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1274 Acc=0.9739 | 0.01s
-[Client 7] fit done | Round 49 | IPv4: 10.10.102.172 | loss=0.1274 acc=0.9739 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 5ca9771d-a303-4cb5-875f-8accd080ef62
-[Client 7] evaluate | loss=0.6498 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 6e0420eb-17fb-4ff2-bc29-4dfd6b726aed
-[Client 7] Round 50: Fixed LR = 0.010000
-[Client 7] [Ping] Round 50 (fit) -> 127.0.0.1:34769 | Latency: 0.06 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.3085 Acc=0.9217 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2439 Acc=0.9304 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1876 Acc=0.9304 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1499 Acc=0.9478 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1269 Acc=0.9565 | 0.01s
-[Client 7] fit done | Round 50 | IPv4: 10.10.102.172 | loss=0.1269 acc=0.9565 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 95d89ed7-33f3-4657-848a-1d96a38db245
-[Client 7] evaluate | loss=0.5075 acc=0.9333
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message d0bc57bd-bd1f-4145-a880-5364aa6038b0
-[Client 7] Round 51: Fixed LR = 0.010000
-[Client 7] [Ping] Round 51 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2410 Acc=0.9391 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2036 Acc=0.9652 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1725 Acc=0.9652 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1451 Acc=0.9652 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1218 Acc=0.9652 | 0.01s
-[Client 7] fit done | Round 51 | IPv4: 10.10.102.172 | loss=0.1218 acc=0.9652 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 044e4ea4-27eb-41fe-8014-b0dfe1a31861
-[Client 7] evaluate | loss=0.6157 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message cb59631e-b9a5-4623-b9e8-ed0eb8f6680e
-[Client 7] Round 52: Fixed LR = 0.010000
-[Client 7] [Ping] Round 52 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2951 Acc=0.9217 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2309 Acc=0.9391 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1752 Acc=0.9565 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1396 Acc=0.9652 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1178 Acc=0.9739 | 0.02s
-[Client 7] fit done | Round 52 | IPv4: 10.10.102.172 | loss=0.1178 acc=0.9739 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message dca9ca02-2168-40cf-a110-95daa77342da
-[Client 7] evaluate | loss=0.4526 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 99662471-8c65-49a6-bad4-12642528c91a
-[Client 7] Round 53: Fixed LR = 0.010000
-[Client 7] [Ping] Round 53 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2387 Acc=0.9478 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1999 Acc=0.9565 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1664 Acc=0.9652 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1381 Acc=0.9652 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1162 Acc=0.9826 | 0.02s
-[Client 7] fit done | Round 53 | IPv4: 10.10.102.172 | loss=0.1162 acc=0.9826 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 29065c06-3670-4e0d-9ebf-93c931e5eb3d
-[Client 7] evaluate | loss=0.5373 acc=0.8667
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 9f843469-8c55-4759-b3a8-6039d50c4700
-[Client 7] Round 54: Fixed LR = 0.010000
-[Client 7] [Ping] Round 54 (fit) -> 127.0.0.1:34769 | Latency: 0.09 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2790 Acc=0.9217 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2277 Acc=0.9478 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1774 Acc=0.9565 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1383 Acc=0.9652 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1132 Acc=0.9652 | 0.01s
-[Client 7] fit done | Round 54 | IPv4: 10.10.102.172 | loss=0.1132 acc=0.9652 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 418988f2-5496-4c92-8c3c-b3e9fa799dde
-[Client 7] evaluate | loss=0.4455 acc=0.9333
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message f8395713-1117-484f-8eec-0acaea16c869
-[Client 7] Round 55: Fixed LR = 0.010000
-[Client 7] [Ping] Round 55 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2473 Acc=0.9304 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1987 Acc=0.9652 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1650 Acc=0.9652 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1393 Acc=0.9565 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1161 Acc=0.9739 | 0.02s
-[Client 7] fit done | Round 55 | IPv4: 10.10.102.172 | loss=0.1161 acc=0.9739 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message c1bf5b55-d53f-477e-91f2-f262953ec23c
-[Client 7] evaluate | loss=0.5770 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 85537bc7-923f-4f53-bc77-5d0beec74742
-[Client 7] Round 56: Fixed LR = 0.010000
-[Client 7] [Ping] Round 56 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2682 Acc=0.9217 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2138 Acc=0.9565 | 0.03s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1634 Acc=0.9565 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1267 Acc=0.9652 | 0.03s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1043 Acc=0.9826 | 0.02s
-[Client 7] fit done | Round 56 | IPv4: 10.10.102.172 | loss=0.1043 acc=0.9826 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 817bbb81-c313-4ae7-ba30-21fbee34531d
-[Client 7] evaluate | loss=0.4640 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 88b5a090-1b5a-4076-a224-2f546696a7bd
-[Client 7] Round 57: Fixed LR = 0.010000
-[Client 7] [Ping] Round 57 (fit) -> 127.0.0.1:34769 | Latency: 0.01 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2260 Acc=0.9391 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1834 Acc=0.9652 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1507 Acc=0.9652 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1247 Acc=0.9739 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1043 Acc=0.9826 | 0.01s
-[Client 7] fit done | Round 57 | IPv4: 10.10.102.172 | loss=0.1043 acc=0.9826 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message e312d3a5-66e1-47f4-b0f1-4ef751ef9313
-[Client 7] evaluate | loss=0.5911 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message f7715f57-e629-4fd4-81c0-b52d1aadd8c1
-[Client 7] Round 58: Fixed LR = 0.010000
-[Client 7] [Ping] Round 58 (fit) -> 127.0.0.1:34769 | Latency: 0.06 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2753 Acc=0.9217 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2143 Acc=0.9478 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1589 Acc=0.9565 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1209 Acc=0.9652 | 0.03s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0996 Acc=0.9826 | 0.02s
-[Client 7] fit done | Round 58 | IPv4: 10.10.102.172 | loss=0.0996 acc=0.9826 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 740f4699-8211-4c16-a7d5-aa3cd65b9497
-[Client 7] evaluate | loss=0.5029 acc=0.9333
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 0a5c02e3-8bd7-41e1-b60d-84442a907281
-[Client 7] Round 59: Fixed LR = 0.010000
-[Client 7] [Ping] Round 59 (fit) -> 127.0.0.1:34769 | Latency: 0.06 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2212 Acc=0.9391 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1749 Acc=0.9652 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1408 Acc=0.9652 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1143 Acc=0.9739 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0946 Acc=0.9826 | 0.01s
-[Client 7] fit done | Round 59 | IPv4: 10.10.102.172 | loss=0.0946 acc=0.9826 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message db157e9b-af15-4266-a235-e1cef72f99ca
-[Client 7] evaluate | loss=0.5745 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message e5b204de-7dd4-4f7b-850e-3ba5db06f12c
-[Client 7] Round 60: Fixed LR = 0.010000
-[Client 7] [Ping] Round 60 (fit) -> 127.0.0.1:34769 | Latency: 0.08 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2661 Acc=0.9043 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2052 Acc=0.9391 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1509 Acc=0.9565 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1137 Acc=0.9826 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0940 Acc=0.9826 | 0.01s
-[Client 7] fit done | Round 60 | IPv4: 10.10.102.172 | loss=0.0940 acc=0.9826 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 2ad78468-342a-40c1-8c42-69788e61cdd7
-[Client 7] evaluate | loss=0.4734 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message b9570de6-fd43-4efa-abdf-d4ee489ba583
-[Client 7] Round 61: Fixed LR = 0.010000
-[Client 7] [Ping] Round 61 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2090 Acc=0.9391 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1682 Acc=0.9565 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1345 Acc=0.9652 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1074 Acc=0.9739 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0883 Acc=0.9826 | 0.01s
-[Client 7] fit done | Round 61 | IPv4: 10.10.102.172 | loss=0.0883 acc=0.9826 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message a9eee512-07af-4e0e-9bbd-7fe380ece96f
-[Client 7] evaluate | loss=0.5853 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 4bdec85c-9a75-4043-933f-ca0c583bda88
-[Client 7] Round 62: Fixed LR = 0.010000
-[Client 7] [Ping] Round 62 (fit) -> 127.0.0.1:34769 | Latency: 0.06 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2641 Acc=0.9130 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2016 Acc=0.9478 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1452 Acc=0.9652 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1066 Acc=0.9826 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0866 Acc=0.9826 | 0.01s
-[Client 7] fit done | Round 62 | IPv4: 10.10.102.172 | loss=0.0866 acc=0.9826 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 836cbce8-54f0-4494-b590-c8d2d8fa4abb
+[92mINFO [0m:      Received: evaluate message fcd35aad-54c7-4eb2-b6a9-534ef2199c58
 [Client 7] evaluate | loss=0.4701 acc=0.9000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 8d080577-6712-4188-93d3-9abef8000109
+[92mINFO [0m:      Received: train message f1ea7279-961e-4794-bc14-62a7b9b1071b
+[Client 7] Round 47: Fixed LR = 0.010000
+[Client 7] [Ping] Round 47 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2500 Acc=0.9304 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2091 Acc=0.9478 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1702 Acc=0.9739 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1399 Acc=0.9652 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1196 Acc=0.9826 | 0.01s
+[Client 7] fit done | Round 47 | IPv4: 10.10.102.172 | loss=0.1196 acc=0.9826 | round_time=0.05s | avg_epoch=0.01s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 8fb69da5-1ca4-46b3-98e7-fa3f2920943a
+[Client 7] evaluate | loss=0.4760 acc=0.8667
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message cadbe394-c65a-4fe1-9dcc-dee344c99a83
+[Client 7] Round 48: Fixed LR = 0.010000
+[Client 7] [Ping] Round 48 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2452 Acc=0.9391 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1933 Acc=0.9652 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1563 Acc=0.9652 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1346 Acc=0.9652 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1186 Acc=0.9739 | 0.02s
+[Client 7] fit done | Round 48 | IPv4: 10.10.102.172 | loss=0.1186 acc=0.9739 | round_time=0.13s | avg_epoch=0.03s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message f2a5e85c-89cc-4bec-ba2e-c84df8b138c6
+[Client 7] evaluate | loss=0.4381 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 644093c0-92a8-4aa2-ac76-15266f7f38ff
+[Client 7] Round 49: Fixed LR = 0.010000
+[Client 7] [Ping] Round 49 (fit) -> 127.0.0.1:42597 | Latency: 0.01 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2404 Acc=0.9391 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1942 Acc=0.9652 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1544 Acc=0.9739 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1265 Acc=0.9739 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1090 Acc=0.9826 | 0.02s
+[Client 7] fit done | Round 49 | IPv4: 10.10.102.172 | loss=0.1090 acc=0.9826 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 537003bf-fe99-4fdc-ab2d-af697550b285
+[Client 7] evaluate | loss=0.4668 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 9bd3c3fe-68e5-4c41-9876-85a6b5b88598
+[Client 7] Round 50: Fixed LR = 0.010000
+[Client 7] [Ping] Round 50 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2412 Acc=0.9304 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1907 Acc=0.9652 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1499 Acc=0.9652 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1226 Acc=0.9652 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1050 Acc=0.9739 | 0.01s
+[Client 7] fit done | Round 50 | IPv4: 10.10.102.172 | loss=0.1050 acc=0.9739 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 89310648-2def-4e5d-a494-8399c8d0235f
+[Client 7] evaluate | loss=0.4590 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message c1dc31a4-3f13-4ebb-9d55-cf6f4a0efa1c
+[Client 7] Round 51: Fixed LR = 0.010000
+[Client 7] [Ping] Round 51 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2424 Acc=0.9391 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1898 Acc=0.9478 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1453 Acc=0.9652 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1177 Acc=0.9739 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.1023 Acc=0.9826 | 0.03s
+[Client 7] fit done | Round 51 | IPv4: 10.10.102.172 | loss=0.1023 acc=0.9826 | round_time=0.13s | avg_epoch=0.03s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 6cbaf37e-9828-49cb-98ba-6ec91b0e5372
+[Client 7] evaluate | loss=0.4722 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 74c8a3fb-a8a6-4445-873a-82a5c577d7c8
+[Client 7] Round 52: Fixed LR = 0.010000
+[Client 7] [Ping] Round 52 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2315 Acc=0.9478 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1824 Acc=0.9652 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1431 Acc=0.9652 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1169 Acc=0.9652 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0992 Acc=0.9739 | 0.02s
+[Client 7] fit done | Round 52 | IPv4: 10.10.102.172 | loss=0.0992 acc=0.9739 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 00869e91-b7d8-4503-9622-22559bc3182f
+[Client 7] evaluate | loss=0.4709 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a68fbc34-5626-43cc-b923-8d90d5df6ac6
+[Client 7] Round 53: Fixed LR = 0.010000
+[Client 7] [Ping] Round 53 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2386 Acc=0.9304 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1861 Acc=0.9478 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1405 Acc=0.9652 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1112 Acc=0.9826 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0944 Acc=0.9826 | 0.02s
+[Client 7] fit done | Round 53 | IPv4: 10.10.102.172 | loss=0.0944 acc=0.9826 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message bd103911-b878-49a0-901b-82df2b31e258
+[Client 7] evaluate | loss=0.4459 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 16a16377-ce05-40f5-960c-8e601960f327
+[Client 7] Round 54: Fixed LR = 0.010000
+[Client 7] [Ping] Round 54 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2252 Acc=0.9478 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1714 Acc=0.9652 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1319 Acc=0.9739 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1083 Acc=0.9652 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0929 Acc=0.9826 | 0.02s
+[Client 7] fit done | Round 54 | IPv4: 10.10.102.172 | loss=0.0929 acc=0.9826 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 3286e84f-f8da-4475-9899-837c45f474dd
+[Client 7] evaluate | loss=0.4638 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 1419ace5-3817-4c54-ac4b-3d71707f1127
+[Client 7] Round 55: Fixed LR = 0.010000
+[Client 7] [Ping] Round 55 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2373 Acc=0.9304 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1806 Acc=0.9565 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1321 Acc=0.9652 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1018 Acc=0.9739 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0870 Acc=0.9826 | 0.02s
+[Client 7] fit done | Round 55 | IPv4: 10.10.102.172 | loss=0.0870 acc=0.9826 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 2a32d15c-0082-41f5-9d19-4580030c4333
+[Client 7] evaluate | loss=0.4300 acc=0.9333
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 3c480d35-7a96-4e7b-b98d-f5ef44e64f5e
+[Client 7] Round 56: Fixed LR = 0.010000
+[Client 7] [Ping] Round 56 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2153 Acc=0.9565 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1649 Acc=0.9652 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1267 Acc=0.9739 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1011 Acc=0.9739 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0843 Acc=0.9826 | 0.02s
+[Client 7] fit done | Round 56 | IPv4: 10.10.102.172 | loss=0.0843 acc=0.9826 | round_time=0.10s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 7555d422-2a09-4ac2-9d13-5c48b03b1b41
+[Client 7] evaluate | loss=0.4693 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 475d344e-1a7c-41fb-bf80-d3a7340f14cc
+[Client 7] Round 57: Fixed LR = 0.010000
+[Client 7] [Ping] Round 57 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2301 Acc=0.9391 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1763 Acc=0.9565 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1277 Acc=0.9739 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0963 Acc=0.9826 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0817 Acc=0.9826 | 0.02s
+[Client 7] fit done | Round 57 | IPv4: 10.10.102.172 | loss=0.0817 acc=0.9826 | round_time=0.10s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 713a2b7d-714f-457a-8077-2660a10a2d9a
+[Client 7] evaluate | loss=0.4352 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 629b1cfb-5d05-4e93-b91f-c4a71c714e7c
+[Client 7] Round 58: Fixed LR = 0.010000
+[Client 7] [Ping] Round 58 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2162 Acc=0.9391 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1606 Acc=0.9652 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1226 Acc=0.9739 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0989 Acc=0.9739 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0821 Acc=0.9826 | 0.01s
+[Client 7] fit done | Round 58 | IPv4: 10.10.102.172 | loss=0.0821 acc=0.9826 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message a06c2c6c-8b1d-4f6e-b43d-85aabd5f5e45
+[Client 7] evaluate | loss=0.4488 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message ae8ae67f-08cc-4464-a1e6-ed4f9ba45582
+[Client 7] Round 59: Fixed LR = 0.010000
+[Client 7] [Ping] Round 59 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2255 Acc=0.9304 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1717 Acc=0.9565 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1238 Acc=0.9739 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0906 Acc=0.9913 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0734 Acc=1.0000 | 0.03s
+[Client 7] fit done | Round 59 | IPv4: 10.10.102.172 | loss=0.0734 acc=1.0000 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 252787d1-2544-4eaf-928d-a4296919f0e1
+[Client 7] evaluate | loss=0.4517 acc=0.9333
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message c2cbfe38-9b2c-49ab-a1cd-dc6f5bce2e0e
+[Client 7] Round 60: Fixed LR = 0.010000
+[Client 7] [Ping] Round 60 (fit) -> 127.0.0.1:42597 | Latency: 0.08 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2091 Acc=0.9391 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1568 Acc=0.9739 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1204 Acc=0.9739 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0957 Acc=0.9739 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0781 Acc=0.9913 | 0.01s
+[Client 7] fit done | Round 60 | IPv4: 10.10.102.172 | loss=0.0781 acc=0.9913 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 84aff50c-4d64-4d38-bd4d-8d56b36224c5
+[Client 7] evaluate | loss=0.4455 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 417f3d08-6095-483c-96e8-221cb2105b47
+[Client 7] Round 61: Fixed LR = 0.010000
+[Client 7] [Ping] Round 61 (fit) -> 127.0.0.1:42597 | Latency: 0.01 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2272 Acc=0.9304 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1702 Acc=0.9565 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1200 Acc=0.9739 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0881 Acc=0.9913 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0727 Acc=0.9913 | 0.03s
+[Client 7] fit done | Round 61 | IPv4: 10.10.102.172 | loss=0.0727 acc=0.9913 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 0720d2c7-15ae-4f51-9008-d08898f0982a
+[Client 7] evaluate | loss=0.4360 acc=0.9333
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 20e58a35-7e61-49b1-9bd3-00e0981cabdf
+[Client 7] Round 62: Fixed LR = 0.010000
+[Client 7] [Ping] Round 62 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2063 Acc=0.9391 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1493 Acc=0.9652 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1093 Acc=0.9739 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0850 Acc=0.9826 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0710 Acc=0.9913 | 0.01s
+[Client 7] fit done | Round 62 | IPv4: 10.10.102.172 | loss=0.0710 acc=0.9913 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 90c798ec-677e-4e35-9d30-84c47df73e5d
+[Client 7] evaluate | loss=0.4455 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message afde2f93-d405-4de3-b818-116551ed5880
 [Client 7] Round 63: Fixed LR = 0.010000
-[Client 7] [Ping] Round 63 (fit) -> 127.0.0.1:34769 | Latency: 0.01 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2108 Acc=0.9304 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1661 Acc=0.9652 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1324 Acc=0.9652 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1057 Acc=0.9826 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0858 Acc=0.9826 | 0.01s
-[Client 7] fit done | Round 63 | IPv4: 10.10.102.172 | loss=0.0858 acc=0.9826 | round_time=0.05s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 63 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2126 Acc=0.9304 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1541 Acc=0.9652 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1082 Acc=0.9652 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0815 Acc=0.9913 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0683 Acc=1.0000 | 0.01s
+[Client 7] fit done | Round 63 | IPv4: 10.10.102.172 | loss=0.0683 acc=1.0000 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 8db080e7-d339-4d58-a7b9-c752cd7e8dd9
-[Client 7] evaluate | loss=0.5800 acc=0.9000
+[92mINFO [0m:      Received: evaluate message d3b17e64-5f46-4f3b-993e-4726401e3074
+[Client 7] evaluate | loss=0.4474 acc=0.8667
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message b03a5c55-f3cd-482f-b596-003359151678
+[92mINFO [0m:      Received: train message 8287c813-679f-46d2-a0f9-2cd262202440
 [Client 7] Round 64: Fixed LR = 0.010000
-[Client 7] [Ping] Round 64 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2576 Acc=0.9130 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1931 Acc=0.9565 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1370 Acc=0.9652 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0998 Acc=0.9826 | 0.03s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0822 Acc=0.9913 | 0.02s
-[Client 7] fit done | Round 64 | IPv4: 10.10.102.172 | loss=0.0822 acc=0.9913 | round_time=0.10s | avg_epoch=0.02s | weights=2228.9KB
+[Client 7] [Ping] Round 64 (fit) -> 127.0.0.1:42597 | Latency: 0.01 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2106 Acc=0.9217 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1482 Acc=0.9565 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1014 Acc=0.9826 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0770 Acc=0.9913 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0657 Acc=0.9913 | 0.01s
+[Client 7] fit done | Round 64 | IPv4: 10.10.102.172 | loss=0.0657 acc=0.9913 | round_time=0.08s | avg_epoch=0.02s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 8cbfec56-8d14-4c6c-b3ee-e831a4d70d0e
-[Client 7] evaluate | loss=0.4671 acc=0.9000
+[92mINFO [0m:      Received: evaluate message e8715ff9-ae0d-4af5-9559-f428558adba7
+[Client 7] evaluate | loss=0.4282 acc=0.9333
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 90ff3b2d-3206-488d-a54b-dc6b0a2803da
+[92mINFO [0m:      Received: train message d3c1701f-16a9-49b3-9aca-c123f5372096
 [Client 7] Round 65: Fixed LR = 0.010000
-[Client 7] [Ping] Round 65 (fit) -> 127.0.0.1:34769 | Latency: 0.07 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2123 Acc=0.9217 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1667 Acc=0.9652 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1312 Acc=0.9739 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.1025 Acc=0.9826 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0821 Acc=0.9913 | 0.02s
-[Client 7] fit done | Round 65 | IPv4: 10.10.102.172 | loss=0.0821 acc=0.9913 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message d9f42b30-ccb8-4547-bb3f-64eacd420d7c
-[Client 7] evaluate | loss=0.6038 acc=0.8667
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message afb1b800-e83b-4036-8300-c77be8951b67
-[Client 7] Round 66: Fixed LR = 0.010000
-[Client 7] [Ping] Round 66 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2661 Acc=0.9130 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.2002 Acc=0.9565 | 0.03s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1388 Acc=0.9565 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0971 Acc=0.9826 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0777 Acc=0.9913 | 0.01s
-[Client 7] fit done | Round 66 | IPv4: 10.10.102.172 | loss=0.0777 acc=0.9913 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message a8fdd58a-dc56-4ec6-b2cc-3d5fc1d9c1a6
-[Client 7] evaluate | loss=0.4402 acc=0.9333
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 7f7c4190-c7ca-40d5-8496-15ac1e3c1486
-[Client 7] Round 67: Fixed LR = 0.010000
-[Client 7] [Ping] Round 67 (fit) -> 127.0.0.1:34769 | Latency: 0.01 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1964 Acc=0.9478 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1540 Acc=0.9739 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1242 Acc=0.9739 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0989 Acc=0.9826 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0782 Acc=0.9913 | 0.01s
-[Client 7] fit done | Round 67 | IPv4: 10.10.102.172 | loss=0.0782 acc=0.9913 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 8fd13ba9-4578-4419-a401-6b99cfd022c2
-[Client 7] evaluate | loss=0.5275 acc=0.8667
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message f0674153-2b42-42ed-9218-8a8f44b743ee
-[Client 7] Round 68: Fixed LR = 0.010000
-[Client 7] [Ping] Round 68 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2556 Acc=0.9130 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1924 Acc=0.9478 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1323 Acc=0.9652 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0925 Acc=0.9826 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0728 Acc=0.9913 | 0.01s
-[Client 7] fit done | Round 68 | IPv4: 10.10.102.172 | loss=0.0728 acc=0.9913 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 14ff0dc5-b116-4720-b38e-bc74ba1232e7
-[Client 7] evaluate | loss=0.4267 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message f2a01670-1d4f-4330-8de5-3c59a5c53d60
-[Client 7] Round 69: Fixed LR = 0.010000
-[Client 7] [Ping] Round 69 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1983 Acc=0.9391 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1475 Acc=0.9739 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1133 Acc=0.9739 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0895 Acc=0.9913 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0739 Acc=0.9913 | 0.01s
-[Client 7] fit done | Round 69 | IPv4: 10.10.102.172 | loss=0.0739 acc=0.9913 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 9e99b29d-b707-490e-b21c-f8f766e669ab
-[Client 7] evaluate | loss=0.4809 acc=0.8667
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message f2c26e13-d403-4c9d-b51b-e2294f32ce46
-[Client 7] Round 70: Fixed LR = 0.010000
-[Client 7] [Ping] Round 70 (fit) -> 127.0.0.1:34769 | Latency: 0.01 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2300 Acc=0.9304 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1706 Acc=0.9565 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1175 Acc=0.9739 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0842 Acc=0.9913 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0680 Acc=1.0000 | 0.02s
-[Client 7] fit done | Round 70 | IPv4: 10.10.102.172 | loss=0.0680 acc=1.0000 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message b1dc95a3-bfac-4a1f-9e2c-54e7aa3d953f
-[Client 7] evaluate | loss=0.4543 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 7e6cbbbb-5176-4eca-a689-fc9a326111a9
-[Client 7] Round 71: Fixed LR = 0.010000
-[Client 7] [Ping] Round 71 (fit) -> 127.0.0.1:34769 | Latency: 0.03 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1994 Acc=0.9391 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1447 Acc=0.9652 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1070 Acc=0.9739 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0834 Acc=0.9913 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0687 Acc=1.0000 | 0.02s
-[Client 7] fit done | Round 71 | IPv4: 10.10.102.172 | loss=0.0687 acc=1.0000 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 11f91a1c-4923-42b5-be0c-810bab84136f
-[Client 7] evaluate | loss=0.4989 acc=0.8667
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message aec09ef0-67b1-4760-b0a0-e1809a75ea40
-[Client 7] Round 72: Fixed LR = 0.010000
-[Client 7] [Ping] Round 72 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2438 Acc=0.9130 | 0.02s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1756 Acc=0.9565 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1138 Acc=0.9652 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0780 Acc=0.9913 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0632 Acc=1.0000 | 0.02s
-[Client 7] fit done | Round 72 | IPv4: 10.10.102.172 | loss=0.0632 acc=1.0000 | round_time=0.11s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 881db075-b8a2-4909-897f-0fe83401fe4f
-[Client 7] evaluate | loss=0.4495 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message df473ea1-c224-439a-9207-0d74d53d06ba
-[Client 7] Round 73: Fixed LR = 0.010000
-[Client 7] [Ping] Round 73 (fit) -> 127.0.0.1:34769 | Latency: 0.05 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1958 Acc=0.9217 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1420 Acc=0.9739 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1051 Acc=0.9826 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0822 Acc=0.9913 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0677 Acc=0.9913 | 0.02s
-[Client 7] fit done | Round 73 | IPv4: 10.10.102.172 | loss=0.0677 acc=0.9913 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message e131f0da-e114-4cd0-bcda-896ff4183b02
-[Client 7] evaluate | loss=0.4782 acc=0.8667
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message a4e27620-8b3e-43fa-a85c-73c8f26d0358
-[Client 7] Round 74: Fixed LR = 0.010000
-[Client 7] [Ping] Round 74 (fit) -> 127.0.0.1:34769 | Latency: 0.01 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2298 Acc=0.9130 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1627 Acc=0.9565 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1052 Acc=0.9739 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0735 Acc=1.0000 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0621 Acc=1.0000 | 0.01s
-[Client 7] fit done | Round 74 | IPv4: 10.10.102.172 | loss=0.0621 acc=1.0000 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 91349f77-50ac-4026-81d5-447f5e45117e
-[Client 7] evaluate | loss=0.4623 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 46f59ec5-9aa0-47f9-abd1-35397ffb01e8
-[Client 7] Round 75: Fixed LR = 0.010000
-[Client 7] [Ping] Round 75 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1976 Acc=0.9391 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1381 Acc=0.9652 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0990 Acc=0.9739 | 0.03s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0750 Acc=0.9913 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0607 Acc=1.0000 | 0.03s
-[Client 7] fit done | Round 75 | IPv4: 10.10.102.172 | loss=0.0607 acc=1.0000 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 23c10164-da08-4826-8c61-e1cb17228c41
-[Client 7] evaluate | loss=0.4947 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 908f6f3e-6700-44f7-9438-82568db6cd36
-[Client 7] Round 76: Fixed LR = 0.010000
-[Client 7] [Ping] Round 76 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2290 Acc=0.9217 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1577 Acc=0.9652 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0981 Acc=0.9739 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0667 Acc=0.9913 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0571 Acc=1.0000 | 0.01s
-[Client 7] fit done | Round 76 | IPv4: 10.10.102.172 | loss=0.0571 acc=1.0000 | round_time=0.05s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message d4699607-529d-4183-b43a-a18f683089a8
-[Client 7] evaluate | loss=0.4751 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message ba2ed36f-f52d-4f03-9870-ffcaafb82fb7
-[Client 7] Round 77: Fixed LR = 0.010000
-[Client 7] [Ping] Round 77 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1998 Acc=0.9391 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1343 Acc=0.9652 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0909 Acc=0.9739 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0697 Acc=1.0000 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0581 Acc=1.0000 | 0.01s
-[Client 7] fit done | Round 77 | IPv4: 10.10.102.172 | loss=0.0581 acc=1.0000 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 5042181f-352d-4ac4-b106-85f95434488e
-[Client 7] evaluate | loss=0.4871 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message cf27f021-9958-40d0-a02e-3a0a801ec12d
-[Client 7] Round 78: Fixed LR = 0.010000
-[Client 7] [Ping] Round 78 (fit) -> 127.0.0.1:34769 | Latency: 0.04 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2112 Acc=0.9217 | 0.03s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1411 Acc=0.9565 | 0.02s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0895 Acc=0.9826 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0652 Acc=0.9913 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0553 Acc=1.0000 | 0.01s
-[Client 7] fit done | Round 78 | IPv4: 10.10.102.172 | loss=0.0553 acc=1.0000 | round_time=0.10s | avg_epoch=0.02s | weights=2228.9KB
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 58eba234-a2b0-4ba1-83e5-a199be82ecc4
-[Client 7] evaluate | loss=0.4417 acc=0.9000
-[92mINFO [0m:      Sent reply
-[92mINFO [0m:      
-[92mINFO [0m:      Received: train message 4833abb9-5c7c-44f7-b2c2-586dc5b04e7b
-[Client 7] Round 79: Fixed LR = 0.010000
-[Client 7] [Ping] Round 79 (fit) -> 127.0.0.1:34769 | Latency: 0.02 ms | Status: SUCCESS
+[Client 7] [Ping] Round 65 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
   [Client] Epoch [1/5] LR=0.010000 | Loss=0.2031 Acc=0.9304 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1366 Acc=0.9565 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0868 Acc=0.9826 | 0.02s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0648 Acc=0.9913 | 0.01s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0573 Acc=1.0000 | 0.01s
-[Client 7] fit done | Round 79 | IPv4: 10.10.102.172 | loss=0.0573 acc=1.0000 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1458 Acc=0.9739 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.1034 Acc=0.9739 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0771 Acc=0.9913 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0621 Acc=1.0000 | 0.01s
+[Client 7] fit done | Round 65 | IPv4: 10.10.102.172 | loss=0.0621 acc=1.0000 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 65ecc1bd-c5af-455d-a6d1-efb0f9c5f01b
-[Client 7] evaluate | loss=0.4634 acc=0.9000
+[92mINFO [0m:      Received: evaluate message 30cd5b20-4e7d-49ce-8804-0c3c4d7ad57d
+[Client 7] evaluate | loss=0.4563 acc=0.8667
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: train message 2ced19b9-437a-4a09-b981-4709c3cd04bd
+[92mINFO [0m:      Received: train message ba9baa05-345a-4fec-b1c5-1e04f93cec7e
+[Client 7] Round 66: Fixed LR = 0.010000
+[Client 7] [Ping] Round 66 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2054 Acc=0.9304 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1462 Acc=0.9652 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0997 Acc=0.9826 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0746 Acc=0.9913 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0639 Acc=0.9913 | 0.01s
+[Client 7] fit done | Round 66 | IPv4: 10.10.102.172 | loss=0.0639 acc=0.9913 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 6a40df27-65df-46bf-ae27-740b0e840b81
+[Client 7] evaluate | loss=0.4442 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 005349a9-6492-4132-9338-28a31b0e9fda
+[Client 7] Round 67: Fixed LR = 0.010000
+[Client 7] [Ping] Round 67 (fit) -> 127.0.0.1:42597 | Latency: 0.04 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2035 Acc=0.9391 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1412 Acc=0.9652 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0964 Acc=0.9739 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0728 Acc=1.0000 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0617 Acc=1.0000 | 0.02s
+[Client 7] fit done | Round 67 | IPv4: 10.10.102.172 | loss=0.0617 acc=1.0000 | round_time=0.13s | avg_epoch=0.03s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 497e5922-0589-4095-b40f-562eafe680e2
+[Client 7] evaluate | loss=0.4684 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 92dc4cd3-16ae-4ee3-bb70-fde0badea471
+[Client 7] Round 68: Fixed LR = 0.010000
+[Client 7] [Ping] Round 68 (fit) -> 127.0.0.1:42597 | Latency: 0.01 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1974 Acc=0.9304 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1378 Acc=0.9565 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0955 Acc=0.9826 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0719 Acc=0.9913 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0594 Acc=1.0000 | 0.02s
+[Client 7] fit done | Round 68 | IPv4: 10.10.102.172 | loss=0.0594 acc=1.0000 | round_time=0.14s | avg_epoch=0.03s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 80364d26-0813-4398-a964-69d82657678f
+[Client 7] evaluate | loss=0.4489 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 19c1a77f-ff21-4625-9dfa-c7c0535d76c2
+[Client 7] Round 69: Fixed LR = 0.010000
+[Client 7] [Ping] Round 69 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2066 Acc=0.9304 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1410 Acc=0.9652 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0925 Acc=0.9826 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0679 Acc=1.0000 | 0.03s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0586 Acc=1.0000 | 0.03s
+[Client 7] fit done | Round 69 | IPv4: 10.10.102.172 | loss=0.0586 acc=1.0000 | round_time=0.13s | avg_epoch=0.03s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message f18005cc-f4bb-4ca8-85b3-df36fa256358
+[Client 7] evaluate | loss=0.4541 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message bf627038-ac94-4424-bad1-f97be62d0edd
+[Client 7] Round 70: Fixed LR = 0.010000
+[Client 7] [Ping] Round 70 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1947 Acc=0.9304 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1351 Acc=0.9565 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0936 Acc=0.9739 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0703 Acc=0.9913 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0579 Acc=1.0000 | 0.01s
+[Client 7] fit done | Round 70 | IPv4: 10.10.102.172 | loss=0.0579 acc=1.0000 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 1e0ea76a-70ce-4c8d-a434-9ceb46edb992
+[Client 7] evaluate | loss=0.4342 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message cddb9a5e-09ad-444b-8ff3-a762f61352ec
+[Client 7] Round 71: Fixed LR = 0.010000
+[Client 7] [Ping] Round 71 (fit) -> 127.0.0.1:42597 | Latency: 0.07 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2163 Acc=0.9217 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1466 Acc=0.9565 | 0.03s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0897 Acc=0.9826 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0636 Acc=1.0000 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0556 Acc=1.0000 | 0.02s
+[Client 7] fit done | Round 71 | IPv4: 10.10.102.172 | loss=0.0556 acc=1.0000 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message b5c56b7e-6d3e-4925-899b-e1a5a03ea588
+[Client 7] evaluate | loss=0.4442 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message db944200-1f0a-434c-8576-fe7852cd9b9d
+[Client 7] Round 72: Fixed LR = 0.010000
+[Client 7] [Ping] Round 72 (fit) -> 127.0.0.1:42597 | Latency: 0.14 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1911 Acc=0.9304 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1296 Acc=0.9652 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0880 Acc=0.9739 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0646 Acc=1.0000 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0526 Acc=1.0000 | 0.03s
+[Client 7] fit done | Round 72 | IPv4: 10.10.102.172 | loss=0.0526 acc=1.0000 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 387069ae-be56-4322-919b-3e1de9fda5b5
+[Client 7] evaluate | loss=0.4275 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message ede03052-c9fa-49b1-a57a-8d9a51be9374
+[Client 7] Round 73: Fixed LR = 0.010000
+[Client 7] [Ping] Round 73 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2007 Acc=0.9217 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1326 Acc=0.9565 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0825 Acc=0.9826 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0579 Acc=1.0000 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0486 Acc=1.0000 | 0.01s
+[Client 7] fit done | Round 73 | IPv4: 10.10.102.172 | loss=0.0486 acc=1.0000 | round_time=0.09s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message a1feb2a7-ade2-4a59-a924-05163044535b
+[Client 7] evaluate | loss=0.4444 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a313bdea-b470-452a-9eee-8882c0917b9f
+[Client 7] Round 74: Fixed LR = 0.010000
+[Client 7] [Ping] Round 74 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1916 Acc=0.9304 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1263 Acc=0.9739 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0842 Acc=0.9826 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0627 Acc=1.0000 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0523 Acc=1.0000 | 0.01s
+[Client 7] fit done | Round 74 | IPv4: 10.10.102.172 | loss=0.0523 acc=1.0000 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message e4e36c41-7aa9-496c-8316-c38694161232
+[Client 7] evaluate | loss=0.4430 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 4af78fdb-a6d1-4cb3-905e-d2c9b1a9ccf7
+[Client 7] Round 75: Fixed LR = 0.010000
+[Client 7] [Ping] Round 75 (fit) -> 127.0.0.1:42597 | Latency: 0.09 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2124 Acc=0.9304 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1437 Acc=0.9565 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0879 Acc=0.9826 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0622 Acc=1.0000 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0533 Acc=1.0000 | 0.02s
+[Client 7] fit done | Round 75 | IPv4: 10.10.102.172 | loss=0.0533 acc=1.0000 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message c7cbf669-b288-46dc-aa3d-f074ce999951
+[Client 7] evaluate | loss=0.4724 acc=0.8667
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message f7114d59-c5eb-42c0-abdc-37c5022fe46d
+[Client 7] Round 76: Fixed LR = 0.010000
+[Client 7] [Ping] Round 76 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1888 Acc=0.9217 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1295 Acc=0.9652 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0835 Acc=0.9826 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0565 Acc=1.0000 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0459 Acc=1.0000 | 0.02s
+[Client 7] fit done | Round 76 | IPv4: 10.10.102.172 | loss=0.0459 acc=1.0000 | round_time=0.12s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 55f57007-8f74-43ac-a1e3-3be155cb0724
+[Client 7] evaluate | loss=0.4301 acc=0.9333
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message e782f889-71cc-4a35-a547-4713639fb3a6
+[Client 7] Round 77: Fixed LR = 0.010000
+[Client 7] [Ping] Round 77 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2223 Acc=0.9217 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1505 Acc=0.9478 | 0.01s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0890 Acc=0.9652 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0586 Acc=1.0000 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0500 Acc=1.0000 | 0.01s
+[Client 7] fit done | Round 77 | IPv4: 10.10.102.172 | loss=0.0500 acc=1.0000 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 4842da97-46a0-428c-b344-dafe2605bc7a
+[Client 7] evaluate | loss=0.4440 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message b341d429-191a-4de2-9a56-1f8c3d026c46
+[Client 7] Round 78: Fixed LR = 0.010000
+[Client 7] [Ping] Round 78 (fit) -> 127.0.0.1:42597 | Latency: 0.02 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1807 Acc=0.9217 | 0.02s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1179 Acc=0.9652 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0801 Acc=0.9826 | 0.03s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0578 Acc=1.0000 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0444 Acc=1.0000 | 0.03s
+[Client 7] fit done | Round 78 | IPv4: 10.10.102.172 | loss=0.0444 acc=1.0000 | round_time=0.13s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 30ea9b78-3996-4672-9381-89b52e263aec
+[Client 7] evaluate | loss=0.4520 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message b027c220-df5d-4e69-be1e-d2a6c1fd73f9
+[Client 7] Round 79: Fixed LR = 0.010000
+[Client 7] [Ping] Round 79 (fit) -> 127.0.0.1:42597 | Latency: 0.07 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.2002 Acc=0.9217 | 0.03s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1345 Acc=0.9565 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0839 Acc=0.9913 | 0.02s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0587 Acc=1.0000 | 0.02s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0486 Acc=1.0000 | 0.03s
+[Client 7] fit done | Round 79 | IPv4: 10.10.102.172 | loss=0.0486 acc=1.0000 | round_time=0.10s | avg_epoch=0.02s | weights=2228.9KB
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 471a5dcc-a678-41ad-a2e5-e72ba7c1f995
+[Client 7] evaluate | loss=0.4684 acc=0.9000
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 09d6aa8f-e96b-4dde-920a-992602cdd752
 [Client 7] Round 80: Fixed LR = 0.010000
-[Client 7] [Ping] Round 80 (fit) -> 127.0.0.1:34769 | Latency: 0.05 ms | Status: SUCCESS
-  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1952 Acc=0.9304 | 0.01s
-  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1302 Acc=0.9565 | 0.01s
-  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0867 Acc=0.9913 | 0.01s
-  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0659 Acc=0.9913 | 0.02s
-  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0552 Acc=1.0000 | 0.01s
-[Client 7] fit done | Round 80 | IPv4: 10.10.102.172 | loss=0.0552 acc=1.0000 | round_time=0.06s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] [Ping] Round 80 (fit) -> 127.0.0.1:42597 | Latency: 0.03 ms | Status: SUCCESS
+  [Client] Epoch [1/5] LR=0.010000 | Loss=0.1780 Acc=0.9130 | 0.01s
+  [Client] Epoch [2/5] LR=0.010000 | Loss=0.1128 Acc=0.9739 | 0.02s
+  [Client] Epoch [3/5] LR=0.010000 | Loss=0.0700 Acc=0.9913 | 0.01s
+  [Client] Epoch [4/5] LR=0.010000 | Loss=0.0479 Acc=1.0000 | 0.01s
+  [Client] Epoch [5/5] LR=0.010000 | Loss=0.0384 Acc=1.0000 | 0.02s
+[Client 7] fit done | Round 80 | IPv4: 10.10.102.172 | loss=0.0384 acc=1.0000 | round_time=0.07s | avg_epoch=0.01s | weights=2228.9KB
+[Client 7] Final round reached -> Packaging and returning full training history & class distribution to server.
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: evaluate message 104ab55c-72ea-4f8e-8a3f-eb992bb8ea6e
-[Client 7] evaluate | loss=0.3992 acc=0.9333
+[92mINFO [0m:      Received: evaluate message 9edc40b7-d365-4c65-9edb-eb525e331941
+[Client 7] evaluate | loss=0.4290 acc=0.9000
 [92mINFO [0m:      Sent reply
 [92mINFO [0m:      
-[92mINFO [0m:      Received: reconnect message e8007bb4-303a-4604-9584-5ae095935d3c
+[92mINFO [0m:      Received: reconnect message 383c02b3-89a0-46b8-8564-7b8421ba39f1
 [92mINFO [0m:      Disconnect and shut down
+
+=======================================================
+[Client 7] Finalizing and saving local client artifacts...
+=======================================================
+[Client 7] Checkpoint Saved: final_model.pth (2234.8 KB)
+  Client Dir : results/simulation/bloodmnist_practical_fedavg_baseline_bn_2/bloodmnist/practical/fedavg/clients/client_7
+  Best Model : results/simulation/bloodmnist_practical_fedavg_baseline_bn_2/bloodmnist/practical/fedavg/clients/client_7/best_model.pth
+  Final Model: results/simulation/bloodmnist_practical_fedavg_baseline_bn_2/bloodmnist/practical/fedavg/clients/client_7/final_model.pth
+  Plot Curve : results/simulation/bloodmnist_practical_fedavg_baseline_bn_2/bloodmnist/practical/fedavg/clients/client_7/client_7_round_curves.png
+=======================================================
+
